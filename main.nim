@@ -1,4 +1,4 @@
-import std/[xmltree]
+import std/xmltree
 import barcode, svg
 
 proc draw(segments: seq[bool], width, height: int): XmlNode =
