@@ -8,9 +8,6 @@ type
     pOdd, pEven
 
 
-const upcaLen* = 95
-
-
 func `not`(bc: seq[bool]): seq[bool] =
   result = bc
   for i, b in bc:
