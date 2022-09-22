@@ -2,7 +2,7 @@
 # سازنده بارکد ساده
 
 لینک مقاله:
-(https://vrgl.ir/tqxlq)[https://vrgl.ir/tqxlq]
+https://vrgl.ir/tqxlq
 
 ## How To Test
 tested with nim version: `1.6.6`
