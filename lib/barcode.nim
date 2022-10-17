@@ -103,9 +103,9 @@ func toUpca*(digits: seq[int]): seq[UpcA] =
 
   >> uSpace
   >> uBorderGuard
-  for i in 0..5: >> upca(digits[i], pEven)
+  for i in 0..5: >> upca(digits[i],  pOdd)
   >> uMiddleGuard
-  for i in 6..10: >> upca(digits[i], pOdd)
-  >> upca(checkDigit digits, pOdd)
+  for i in 6..10: >> upca(digits[i], pEven)
+  >> upca(checkDigit digits, pEven)
   >> uBorderGuard
   >> uSpace

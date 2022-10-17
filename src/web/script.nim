@@ -84,9 +84,9 @@ proc createDom: VNode =
         tr:
           td: text "S"
           td: text "B"
-          for i in 1..6: td: text "E"
-          td: text "M"
           for i in 1..6: td: text "O"
+          td: text "M"
+          for i in 1..6: td: text "E"
           td: text "B"
           td: text "S"
 
