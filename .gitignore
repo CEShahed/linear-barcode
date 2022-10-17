@@ -1,4 +1,4 @@
 *.svg
-play.*
+*.js
 temp.*
-temp/
+play.*

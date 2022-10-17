@@ -1,5 +1,5 @@
 type
-  UpcA = enum
+  UpcA* = enum
     o0, o1, o2, o3, o4, o5, o6, o7, o8, o9
     e0, e1, e2, e3, e4, e5, e6, e7, e8, e9
     uSpace, uBorderGuard, uMiddleGuard
@@ -13,6 +13,7 @@ func `not`(bc: seq[bool]): seq[bool] =
   for i, b in bc:
     result[i] = not b
 
+
 func bits(n, size: int): seq[bool] =
   result = newSeq[bool](size)
 
@@ -21,7 +22,7 @@ func bits(n, size: int): seq[bool] =
     result[i] = acc mod 10 == 1
     acc = acc div 10
 
-func bits(u: UpcA): seq[bool] =
+func bits*(u: UpcA): seq[bool] =
   case u:
   of o0: bits(0001101, 7)
   of o1: bits(0011001, 7)
@@ -47,42 +48,64 @@ func bits(u: UpcA): seq[bool] =
   of uBorderGuard: bits(101, 3)
   of uMiddleGuard: bits(01010, 5)
 
+func bits*(us: seq[UpcA]): seq[bool] =
+  for u in us:
+    result.add u.bits
+
+
+func digit(u: UpcA): int =
+  case u:
+  of e0, o0: 0
+  of e1, o1: 1
+  of e2, o2: 2
+  of e3, o3: 3
+  of e4, o4: 4
+  of e5, o5: 5
+  of e6, o6: 6
+  of e7, o7: 7
+  of e8, o8: 8
+  of e9, o9: 9
+  else:
+    raise newException(ValueError, "not a number")
+
+func name*(u: UpcA): string =
+  case u:
+  of e0..e9: "even " & $u.digit
+  of o0..o9: "odd " & $u.digit
+  of uSpace: "space"
+  of uBorderGuard: "border guard"
+  of uMiddleGuard: "middle guard"
+
+
+func supplement(n, base: int): int =
+  if n mod base == 0: 0
+  else: base - abs n mod 10
+
+func checkDigit*(digits: seq[int]): int =
+  for i, d in digits:
+    result.inc:
+      if i mod 2 == 0: 3*d
+      else: d
+
+  supplement result, 10
+
+
 func upca(n: range[0..9], parity: Parity): UpcA =
   case parity:
   of pOdd: UpcA n
   of pEven: UpcA n+10
 
-
-func supplement(n, base: int): int =
-  if n == 0: 0
-  else: base - abs n mod 10
-
-func checkDigit(digits: seq[int]): int =
-  var major = false
-
-  for i in countdown(digits.high, 0):
-    major = not major
-    result.inc:
-      if major: 3*digits[i]
-      else: digits[i]
-
-  supplement result, 10
-
-
-func toUpca*(digits: seq[int]): seq[bool] =
+func toUpca*(digits: seq[int]): seq[UpcA] =
   assert digits.len == 11
 
-  result.add bits uSpace
-  result.add bits uBorderGuard
+  template `>>`(smth): untyped =
+    result.add smth
 
-  for i in 0..5:
-    result.add bits upca(digits[i], pEven)
-
-  result.add bits uMiddleGuard
-
-  for i in 6..10:
-    result.add upca(digits[i], pOdd).bits
-
-  result.add upca(checkDigit digits, pOdd).bits
-  result.add bits uBorderGuard
-  result.add bits uSpace
+  >> uSpace
+  >> uBorderGuard
+  for i in 0..5: >> upca(digits[i], pEven)
+  >> uMiddleGuard
+  for i in 6..10: >> upca(digits[i], pOdd)
+  >> upca(checkDigit digits, pOdd)
+  >> uBorderGuard
+  >> uSpace
