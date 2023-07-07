@@ -11,6 +11,7 @@ nim js web/src/script
 ```
 
 Then open `./dist/index.html` in your web browser and enjoy!
+see demo [here](https://ceshahed.github.io/linear-barcode/).
 
 ## Run MVP
 ```bash
