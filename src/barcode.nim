@@ -81,13 +81,15 @@ func supplement(n, base: int): int =
   if n mod base == 0: 0
   else: base - abs n mod 10
 
-func checkDigit*(digits: seq[int]): int =
+
+func checkDigitSum*(digits: seq[int]): int =
   for i, d in digits:
     result.inc:
-      if i mod 2 == 0: 3*d
-      else: d
+      if i mod 2 == 1: d
+      else: d * 3
 
-  supplement result, 10
+func checkDigit*(digits: seq[int]): int =
+  supplement checkDigitSum digits, 10
 
 
 func upca(n: range[0..9], parity: Parity): UpcA =

@@ -10,12 +10,6 @@ func digits*(s: string): seq[int] =
   for ch in s:
     result.add parseDigit ch
 
-func checkDigitSum*(digits: seq[int]): int =
-  for i, d in digits:
-    result.inc:
-      if i mod 2 == 1: d
-      else: d * 3
-
 # html -------------------------------------
 
 func color(bit: bool): string =
@@ -39,7 +33,7 @@ var userInput = kstring""
 
 proc createDom: VNode =
   buildHtml tdiv:
-    h1: text "Barcode Generator | UPC-A"
+    h1: text "UPC-A Barcode Generator"
     tdiv:
       input(maxlength = "11"):
         proc onkeyup(ev: Event; n: VNode) =
