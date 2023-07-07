@@ -7,7 +7,7 @@ nimble install
 
 ## Compile Web App
 ```bash
-nim js web/src/script
+nimble web
 ```
 
 Then open `./dist/index.html` in your web browser and enjoy!
