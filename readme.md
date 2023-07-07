@@ -35,9 +35,5 @@ https://vrgl.ir/tqxlq
 ```
 nim r play.nim
 ```
-یا
-```
-nim r src/draw.nim
-```
 
 که نتیجه آن یک فایل با نام `temp.svg` است که در همین پوشه ایجاد میشود
