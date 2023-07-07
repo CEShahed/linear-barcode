@@ -1,5 +1,5 @@
 include karax/prelude
-import ../../lib/barcode
+import barcode
 
 # utils -------------------------------------
 
@@ -49,7 +49,7 @@ proc createDom: VNode =
 
     h2: text "Steps"
     if userInput.len == 11:
-      let 
+      let
         ds = digits $userInput
         s = checkDigitSum ds
 
@@ -127,4 +127,6 @@ proc createDom: VNode =
         text " - here's the repository "
         url "on github", "https://github.com/CEShahed/linear-barcode"
 
-setRenderer createDom
+
+when isMainModule:
+  setRenderer createDom

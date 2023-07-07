@@ -1,10 +1,28 @@
-# سازنده بارکد خطی UPC-A
+# UPC-A Barcode Generator
+
+## Install dependecies
+```bash
+nimble install
+```
+
+## Compile Web App
+```bash
+nim js web/src/script
+```
+
+Then open `./dist/index.html` in your web browser and enjoy!
+
+## Run MVP
+```bash
+nim r play.nim
+```
+
+creates `temp.svg` in current directory
+
+# بارکد ساز UPC-A
 
 لینک مقاله:
 https://vrgl.ir/tqxlq
-
-
-## توضیح ساختار پروژه
 
 
 ## چگونه برنامه را خودم اجرا کنم؟
@@ -12,8 +30,8 @@ https://vrgl.ir/tqxlq
 
 ورژنی از زبان Nim که من برای توسعه از آن استفاده کردم، ورژن `1.6.6` است.
 
-
 بعد از نصب زبان Nim میتوانید با این کد در پوشه اصلی پروژه برنامه رو اجرا کنید:
+
 ```
 nim r play.nim
 ```

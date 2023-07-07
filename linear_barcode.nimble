@@ -12,3 +12,7 @@ bin           = @["linear_barcode"]
 
 requires "nim >= 1.6.6"
 requires "karax >= 1.2.2"
+
+
+task web, "builds web inside ./dist/":
+  exec "nim -o:./dist/script.js js src/web"
