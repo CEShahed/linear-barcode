@@ -1,3 +1,4 @@
+import std/sequtils
 include karax/prelude
 import barcode
 
@@ -7,8 +8,7 @@ func parseDigit*(ch: char): int =
   ch.ord - '0'.ord
 
 func digits*(s: string): seq[int] =
-  for ch in s:
-    result.add parseDigit ch
+  map s, parseDigit
 
 # html -------------------------------------
 

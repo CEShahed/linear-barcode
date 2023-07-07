@@ -1,3 +1,5 @@
+import std/sequtils
+
 type
   UpcA* = enum
     o0, o1, o2, o3, o4, o5, o6, o7, o8, o9
@@ -8,11 +10,11 @@ type
     pOdd, pEven
 
 
-func `not`(bc: seq[bool]): seq[bool] =
-  result = bc
-  for i, b in bc:
-    result[i] = not b
+func negate(b: bool): bool = 
+  not b
 
+func `not`(bc: seq[bool]): seq[bool] =
+  map bc, negate
 
 func bits(n, size: int): seq[bool] =
   result = newSeq[bool](size)
@@ -34,16 +36,16 @@ func bits*(u: UpcA): seq[bool] =
   of o7: bits(0111011, 7)
   of o8: bits(0110111, 7)
   of o9: bits(0001011, 7)
-  of e0: not bits(o0)
-  of e1: not bits(o1)
-  of e2: not bits(o2)
-  of e3: not bits(o3)
-  of e4: not bits(o4)
-  of e5: not bits(o5)
-  of e6: not bits(o6)
-  of e7: not bits(o7)
-  of e8: not bits(o8)
-  of e9: not bits(o9)
+  of e0: not bits o0
+  of e1: not bits o1
+  of e2: not bits o2
+  of e3: not bits o3
+  of e4: not bits o4
+  of e5: not bits o5
+  of e6: not bits o6
+  of e7: not bits o7
+  of e8: not bits o8
+  of e9: not bits o9
   of uSpace: bits(0, 9)
   of uBorderGuard: bits(101, 3)
   of uMiddleGuard: bits(01010, 5)
