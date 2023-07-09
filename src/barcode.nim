@@ -19,13 +19,7 @@ func `not`(bc: seq[bool]): seq[bool] =
   map bc, negate
 
 func `'bits`(lit: string): seq[bool] =
-  for b in lit:
-    result.add:
-      case b
-      of '1': true
-      of '0': false
-      of '_': continue
-      else: raise newException(ValueError, "not a valid bit")
+  lit.mapIt it == '1'
 
 func bits*(u: UpcA): seq[bool] =
   case u
@@ -40,7 +34,7 @@ func bits*(u: UpcA): seq[bool] =
   of o8: 0110111'bits
   of o9: 0001011'bits
   of e0..e9: not bits UpcA(u.ord - e0.ord)
-  of uSpace: 000_000_000'bits
+  of uSpace: 000000000'bits
   of uBorderGuard: 101'bits
   of uMiddleGuard: 01010'bits
 
