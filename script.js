@@ -5,9 +5,10 @@ var lastJSError = null;
 var NTI33555132 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
 var NTI1140850750 = {size: 0, kind: 24, base: null, node: null, finalizer: null};
 var NTI1140850714 = {size: 0, kind: 24, base: null, node: null, finalizer: null};
-var NTI1140850758 = {size: 0, kind: 24, base: null, node: null, finalizer: null};
 var NTI33555114 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
 var NTI33555125 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI1140850691 = {size: 0, kind: 14, base: null, node: null, finalizer: null};
+var NTI1140850821 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
 var NTI33555121 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
 var NTI1140850699 = {size: 0,kind: 31,base: null,node: null,finalizer: null};
 var NTI1140850693 = {size: 0, kind: 20, base: null, node: null, finalizer: null};
@@ -1003,13 +1004,39 @@ NTI469762062.base = NTI1140850693;
 var NNI33555121 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
 NTI33555121.node = NNI33555121;
 NTI33555121.base = NTI33555120;
+var NNI1140850691 = {kind: 2, offset: 0, typ: null, name: null, len: 23, sons: {"0": {kind: 1, offset: 0, typ: NTI1140850691, name: "o0", len: 0, sons: null}, 
+"1": {kind: 1, offset: 1, typ: NTI1140850691, name: "o1", len: 0, sons: null}, 
+"2": {kind: 1, offset: 2, typ: NTI1140850691, name: "o2", len: 0, sons: null}, 
+"3": {kind: 1, offset: 3, typ: NTI1140850691, name: "o3", len: 0, sons: null}, 
+"4": {kind: 1, offset: 4, typ: NTI1140850691, name: "o4", len: 0, sons: null}, 
+"5": {kind: 1, offset: 5, typ: NTI1140850691, name: "o5", len: 0, sons: null}, 
+"6": {kind: 1, offset: 6, typ: NTI1140850691, name: "o6", len: 0, sons: null}, 
+"7": {kind: 1, offset: 7, typ: NTI1140850691, name: "o7", len: 0, sons: null}, 
+"8": {kind: 1, offset: 8, typ: NTI1140850691, name: "o8", len: 0, sons: null}, 
+"9": {kind: 1, offset: 9, typ: NTI1140850691, name: "o9", len: 0, sons: null}, 
+"10": {kind: 1, offset: 10, typ: NTI1140850691, name: "e0", len: 0, sons: null}, 
+"11": {kind: 1, offset: 11, typ: NTI1140850691, name: "e1", len: 0, sons: null}, 
+"12": {kind: 1, offset: 12, typ: NTI1140850691, name: "e2", len: 0, sons: null}, 
+"13": {kind: 1, offset: 13, typ: NTI1140850691, name: "e3", len: 0, sons: null}, 
+"14": {kind: 1, offset: 14, typ: NTI1140850691, name: "e4", len: 0, sons: null}, 
+"15": {kind: 1, offset: 15, typ: NTI1140850691, name: "e5", len: 0, sons: null}, 
+"16": {kind: 1, offset: 16, typ: NTI1140850691, name: "e6", len: 0, sons: null}, 
+"17": {kind: 1, offset: 17, typ: NTI1140850691, name: "e7", len: 0, sons: null}, 
+"18": {kind: 1, offset: 18, typ: NTI1140850691, name: "e8", len: 0, sons: null}, 
+"19": {kind: 1, offset: 19, typ: NTI1140850691, name: "e9", len: 0, sons: null}, 
+"20": {kind: 1, offset: 20, typ: NTI1140850691, name: "uSpace", len: 0, sons: null}, 
+"21": {kind: 1, offset: 21, typ: NTI1140850691, name: "uBorderGuard", len: 0, sons: null}, 
+"22": {kind: 1, offset: 22, typ: NTI1140850691, name: "uMiddleGuard", len: 0, sons: null}}};
+NTI1140850691.node = NNI1140850691;
+var NNI1140850821 = {kind: 2, len: 2, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "a", len: 0, typ: NTI1140850691, name: "a", sons: null}, 
+{kind: 1, offset: "b", len: 0, typ: NTI1140850691, name: "b", sons: null}]};
+NTI1140850821.node = NNI1140850821;
 var NNI33555125 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
 NTI33555125.node = NNI33555125;
 var NNI33555114 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
 NTI33555114.node = NNI33555114;
 NTI33555114.base = NTI33555112;
 NTI33555125.base = NTI33555114;
-NTI1140850758.base = NTI33554466;
 NTI1140850714.base = NTI33554466;
 NTI1140850750.base = NTI33554466;
 var NNI33555132 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
@@ -7926,42 +7953,42 @@ function raiseDivByZero() {
   
 }
 
-function checkDigitSum_1140850903(digits_1140850904) {
+function checkDigitSum_1140850944(digits_1140850945) {
             var Temporary4;
 
-  var result_1140850905 = 0;
+  var result_1140850946 = 0;
 
   var F = {procname: "barcode.checkDigitSum", prev: framePtr, filename: "C:\\Users\\HamidB80\\Documents\\programming\\nim\\linear-barcode\\src\\barcode.nim", line: 0};
   framePtr = F;
     Label1: do {
-      F.line = 90;
-      var i_1140850929 = 0;
-      F.line = 90;
-      var d_1140850930 = 0;
+      F.line = 73;
+      var i_1140850970 = 0;
+      F.line = 73;
+      var d_1140850971 = 0;
       F.line = 168;
       var i_469762512 = 0;
       F.line = 169;
-      var L_469762513 = (digits_1140850904).length;
+      var L_469762513 = (digits_1140850945).length;
       Label2: do {
         F.line = 170;
           Label3: while (true) {
           if (!(i_469762512 < L_469762513)) break Label3;
-            F.line = 90;
-            i_1140850929 = i_469762512;
-            F.line = 90;
-            d_1140850930 = digits_1140850904[chckIndx(i_469762512, 0, (digits_1140850904).length - 1)];
-            F.line = 90;
-            if ((modInt(i_1140850929, 2) == 1)) {
-            Temporary4 = d_1140850930;
+            F.line = 73;
+            i_1140850970 = i_469762512;
+            F.line = 73;
+            d_1140850971 = digits_1140850945[chckIndx(i_469762512, 0, (digits_1140850945).length - 1)];
+            F.line = 73;
+            if ((modInt(i_1140850970, 2) == 1)) {
+            Temporary4 = d_1140850971;
             }
             else {
-            Temporary4 = mulInt(d_1140850930, 3);
+            Temporary4 = mulInt(d_1140850971, 3);
             }
             
-            result_1140850905 = addInt(result_1140850905, Temporary4);
+            result_1140850946 = addInt(result_1140850946, Temporary4);
             F.line = 172;
             i_469762512 = addInt(i_469762512, 1);
-            if (!(((digits_1140850904).length == L_469762513))) {
+            if (!(((digits_1140850945).length == L_469762513))) {
             F.line = 173;
             failedAssertImpl_218103864(makeNimstrLit("C:\\Users\\HamidB80\\.choosenim\\toolchains\\nim-1.6.14\\lib\\system\\iterators.nim(173, 11) `len(a) == L` the length of the seq changed while iterating over it"));
             }
@@ -7971,217 +7998,192 @@ function checkDigitSum_1140850903(digits_1140850904) {
     } while (false);
   framePtr = F.prev;
 
-  return result_1140850905;
-
-}
-
-function complement_1140850899(n_1140850900, base_1140850901) {
-    var Temporary1;
-
-  var result_1140850902 = 0;
-
-  var F = {procname: "barcode.complement", prev: framePtr, filename: "C:\\Users\\HamidB80\\Documents\\programming\\nim\\linear-barcode\\src\\barcode.nim", line: 0};
-  framePtr = F;
-    F.line = 85;
-    if ((modInt(n_1140850900, base_1140850901) == 0)) {
-    Temporary1 = 0;
-    }
-    else {
-    Temporary1 = subInt(base_1140850901, absInt(modInt(n_1140850900, 10)));
-    }
-    
-    result_1140850902 = Temporary1;
-  framePtr = F.prev;
-
-  return result_1140850902;
-
-}
-
-function checkDigit_1140850944(digits_1140850945) {
-  var result_1140850946 = 0;
-
-  var F = {procname: "barcode.checkDigit", prev: framePtr, filename: "C:\\Users\\HamidB80\\Documents\\programming\\nim\\linear-barcode\\src\\barcode.nim", line: 0};
-  framePtr = F;
-    F.line = 96;
-    result_1140850946 = chckRange(complement_1140850899(checkDigitSum_1140850903(digits_1140850945), 10), 0, 9);
-  framePtr = F.prev;
-
   return result_1140850946;
 
 }
 
-function upca_1140850947(n_1140850948, parity_1140850949) {
+function complement_1140850940(n_1140850941, base_1140850942) {
     var Temporary1;
 
-  var result_1140850950 = 0;
+  var result_1140850943 = 0;
 
-  var F = {procname: "barcode.upca", prev: framePtr, filename: "C:\\Users\\HamidB80\\Documents\\programming\\nim\\linear-barcode\\src\\barcode.nim", line: 0};
+  var F = {procname: "barcode.complement", prev: framePtr, filename: "C:\\Users\\HamidB80\\Documents\\programming\\nim\\linear-barcode\\src\\barcode.nim", line: 0};
   framePtr = F;
-    F.line = 100;
-    F.line = 100;
-    switch (parity_1140850949) {
-    case 0:
-      Temporary1 = n_1140850948;
-      break;
-    case 1:
-      Temporary1 = chckRange(addInt(n_1140850948, 10), 0, 22);
-      break;
+    F.line = 68;
+    if ((modInt(n_1140850941, base_1140850942) == 0)) {
+    Temporary1 = 0;
     }
-    result_1140850950 = Temporary1;
+    else {
+    Temporary1 = subInt(base_1140850942, absInt(modInt(n_1140850941, 10)));
+    }
+    
+    result_1140850943 = Temporary1;
   framePtr = F.prev;
 
-  return result_1140850950;
+  return result_1140850943;
 
 }
 
-function toUpca_1140850960(digits_1140850961) {
-  var result_1140850962 = [];
+function checkDigit_1140850985(digits_1140850986) {
+  var result_1140850987 = 0;
+
+  var F = {procname: "barcode.checkDigit", prev: framePtr, filename: "C:\\Users\\HamidB80\\Documents\\programming\\nim\\linear-barcode\\src\\barcode.nim", line: 0};
+  framePtr = F;
+    F.line = 79;
+    result_1140850987 = chckRange(complement_1140850940(checkDigitSum_1140850944(digits_1140850986), 10), 0, 9);
+  framePtr = F.prev;
+
+  return result_1140850987;
+
+}
+
+function upca_1140850988(n_1140850989, parity_1140850990) {
+    var Temporary1;
+
+  var result_1140850991 = 0;
+
+  var F = {procname: "barcode.upca", prev: framePtr, filename: "C:\\Users\\HamidB80\\Documents\\programming\\nim\\linear-barcode\\src\\barcode.nim", line: 0};
+  framePtr = F;
+    F.line = 83;
+    F.line = 83;
+    switch (parity_1140850990) {
+    case 0:
+      Temporary1 = chckRange(addInt(n_1140850989, 0), 0, 22);
+      break;
+    case 1:
+      Temporary1 = chckRange(addInt(n_1140850989, 10), 0, 22);
+      break;
+    }
+    result_1140850991 = Temporary1;
+  framePtr = F.prev;
+
+  return result_1140850991;
+
+}
+
+function toUpca_1140850998(digits_1140850999) {
+  var result_1140851000 = [];
 
   var F = {procname: "barcode.toUpca", prev: framePtr, filename: "C:\\Users\\HamidB80\\Documents\\programming\\nim\\linear-barcode\\src\\barcode.nim", line: 0};
   framePtr = F;
-    if (!(((digits_1140850961).length == 11))) {
-    F.line = 105;
-    failedAssertImpl_218103864(makeNimstrLit("C:\\Users\\HamidB80\\Documents\\programming\\nim\\linear-barcode\\src\\barcode.nim(105, 10) `digits.len == 11` "));
+    if (!(((digits_1140850999).length == 11))) {
+    F.line = 88;
+    failedAssertImpl_218103864(makeNimstrLit("C:\\Users\\HamidB80\\Documents\\programming\\nim\\linear-barcode\\src\\barcode.nim(88, 10) `digits.len == 11` "));
     }
     
-    F.line = 110;
-    result_1140850962.push(20);;
-    F.line = 111;
-    result_1140850962.push(21);;
+    F.line = 93;
+    result_1140851000.push(20);;
+    F.line = 94;
+    result_1140851000.push(21);;
     Label1: do {
-      F.line = 112;
-      var i_1140850985 = 0;
+      F.line = 95;
+      var i_1140851023 = 0;
       F.line = 90;
       var res_469762516 = 0;
       Label2: do {
         F.line = 91;
           Label3: while (true) {
           if (!(res_469762516 <= 5)) break Label3;
-            F.line = 112;
-            i_1140850985 = res_469762516;
-            F.line = 112;
-            result_1140850962.push(upca_1140850947(digits_1140850961[chckIndx(i_1140850985, 0, (digits_1140850961).length - 1)], 0));;
+            F.line = 95;
+            i_1140851023 = res_469762516;
+            F.line = 95;
+            result_1140851000.push(upca_1140850988(digits_1140850999[chckIndx(i_1140851023, 0, (digits_1140850999).length - 1)], 0));;
             F.line = 93;
             res_469762516 = addInt(res_469762516, 1);
           }
       } while (false);
     } while (false);
-    F.line = 113;
-    result_1140850962.push(22);;
+    F.line = 96;
+    result_1140851000.push(22);;
     Label4: do {
-      F.line = 114;
-      var i_1140850998 = 0;
+      F.line = 97;
+      var i_1140851036 = 0;
       F.line = 90;
       var res_469762519 = 6;
       Label5: do {
         F.line = 91;
           Label6: while (true) {
           if (!(res_469762519 <= 10)) break Label6;
-            F.line = 114;
-            i_1140850998 = res_469762519;
-            F.line = 114;
-            result_1140850962.push(upca_1140850947(digits_1140850961[chckIndx(i_1140850998, 0, (digits_1140850961).length - 1)], 1));;
+            F.line = 97;
+            i_1140851036 = res_469762519;
+            F.line = 97;
+            result_1140851000.push(upca_1140850988(digits_1140850999[chckIndx(i_1140851036, 0, (digits_1140850999).length - 1)], 1));;
             F.line = 93;
             res_469762519 = addInt(res_469762519, 1);
           }
       } while (false);
     } while (false);
-    F.line = 115;
-    result_1140850962.push(upca_1140850947(checkDigit_1140850944(digits_1140850961), 1));;
-    F.line = 116;
-    result_1140850962.push(21);;
-    F.line = 117;
-    result_1140850962.push(20);;
+    F.line = 98;
+    result_1140851000.push(upca_1140850988(checkDigit_1140850985(digits_1140850999), 1));;
+    F.line = 99;
+    result_1140851000.push(21);;
+    F.line = 100;
+    result_1140851000.push(20);;
   framePtr = F.prev;
 
-  return result_1140850962;
+  return result_1140851000;
 
 }
 
-function digit_1140850883(u_1140850884) {
+function contains_1140850909(s_1140850913, value_1140850914) {
+  var result_1140850915 = false;
+
+  var F = {procname: "contains.contains", prev: framePtr, filename: "C:\\Users\\HamidB80\\.choosenim\\toolchains\\nim-1.6.14\\lib\\system.nim", line: 0};
+  framePtr = F;
+    F.line = 823;
+    result_1140850915 = ((s_1140850913.a <= value_1140850914) && (value_1140850914 <= s_1140850913.b));
+  framePtr = F.prev;
+
+  return result_1140850915;
+
+}
+
+function HEX2EHEX2E_1140850888(a_1140850891, b_1140850892) {
+  var result_1140850895 = ({a: 0, b: 0});
+
+  var F = {procname: ".....", prev: framePtr, filename: "C:\\Users\\HamidB80\\.choosenim\\toolchains\\nim-1.6.14\\lib\\system.nim", line: 0};
+  framePtr = F;
+    F.line = 512;
+    result_1140850895 = nimCopy(result_1140850895, {a: a_1140850891, b: b_1140850892}, NTI1140850821);
+  framePtr = F.prev;
+
+  return result_1140850895;
+
+}
+
+function digit_1140850885(u_1140850886) {
     var Temporary1;
 
-  var result_1140850885 = 0;
+  var result_1140850887 = 0;
 
   var F = {procname: "barcode.digit", prev: framePtr, filename: "C:\\Users\\HamidB80\\Documents\\programming\\nim\\linear-barcode\\src\\barcode.nim", line: 0};
   framePtr = F;
-    F.line = 61;
-    F.line = 61;
-    switch (u_1140850884) {
-    case 10:
-    case 0:
-      Temporary1 = 0;
-      break;
-    case 11:
-    case 1:
-      Temporary1 = 1;
-      break;
-    case 12:
-    case 2:
-      Temporary1 = 2;
-      break;
-    case 13:
-    case 3:
-      Temporary1 = 3;
-      break;
-    case 14:
-    case 4:
-      Temporary1 = 4;
-      break;
-    case 15:
-    case 5:
-      Temporary1 = 5;
-      break;
-    case 16:
-    case 6:
-      Temporary1 = 6;
-      break;
-    case 17:
-    case 7:
-      Temporary1 = 7;
-      break;
-    case 18:
-    case 8:
-      Temporary1 = 8;
-      break;
-    case 19:
-    case 9:
-      Temporary1 = 9;
-      break;
-    default: 
-      F.line = 73;
-      raiseException({message: makeNimstrLit("not a digit"), parent: null, m_type: NTI33555125, name: null, trace: [], up: null}, "ValueError");
-      break;
+    F.line = 53;
+    if (contains_1140850909(HEX2EHEX2E_1140850888(0, 19), u_1140850886)) {
+    Temporary1 = modInt(u_1140850886, 10);
     }
-    result_1140850885 = Temporary1;
+    else {
+      F.line = 56;
+      raiseException({message: makeNimstrLit("not a digit"), parent: null, m_type: NTI33555125, name: null, trace: [], up: null}, "ValueError");
+    }
+    
+    result_1140850887 = chckRange(Temporary1, 0, 9);
   framePtr = F.prev;
 
-  return result_1140850885;
+  return result_1140850887;
 
 }
 
-function name_1140850896(u_1140850897) {
+function name_1140850937(u_1140850938) {
     var Temporary1;
 
-  var result_1140850898 = [];
+  var result_1140850939 = [];
 
   var F = {procname: "barcode.name", prev: framePtr, filename: "C:\\Users\\HamidB80\\Documents\\programming\\nim\\linear-barcode\\src\\barcode.nim", line: 0};
   framePtr = F;
-    F.line = 76;
-    F.line = 76;
-    switch (u_1140850897) {
-    case 10:
-    case 11:
-    case 12:
-    case 13:
-    case 14:
-    case 15:
-    case 16:
-    case 17:
-    case 18:
-    case 19:
-      Temporary1 = (makeNimstrLit("even ") || []).concat(HEX24_335544323(digit_1140850883(u_1140850897)) || []);
-      break;
+    F.line = 59;
+    F.line = 59;
+    switch (u_1140850938) {
     case 0:
     case 1:
     case 2:
@@ -8192,7 +8194,19 @@ function name_1140850896(u_1140850897) {
     case 7:
     case 8:
     case 9:
-      Temporary1 = (makeNimstrLit("odd ") || []).concat(HEX24_335544323(digit_1140850883(u_1140850897)) || []);
+      Temporary1 = (makeNimstrLit("odd ") || []).concat(HEX24_335544323(digit_1140850885(u_1140850938)) || []);
+      break;
+    case 10:
+    case 11:
+    case 12:
+    case 13:
+    case 14:
+    case 15:
+    case 16:
+    case 17:
+    case 18:
+    case 19:
+      Temporary1 = (makeNimstrLit("even ") || []).concat(HEX24_335544323(digit_1140850885(u_1140850938)) || []);
       break;
     case 20:
       Temporary1 = makeNimstrLit("space");
@@ -8204,61 +8218,67 @@ function name_1140850896(u_1140850897) {
       Temporary1 = makeNimstrLit("middle guard");
       break;
     }
-    result_1140850898 = nimCopy(null, Temporary1, NTI33554439);
+    result_1140850939 = nimCopy(null, Temporary1, NTI33554439);
   framePtr = F.prev;
 
-  return result_1140850898;
+  return result_1140850939;
 
 }
 
-function newSeq_1140850798(len_1140850800) {
-  var result_1140850801 = [];
+function HEX27bits_1140850790(lit_1140850791) {
+              var Temporary5;
 
-  var F = {procname: "newSeq.newSeq", prev: framePtr, filename: "C:\\Users\\HamidB80\\.choosenim\\toolchains\\nim-1.6.14\\lib\\system.nim", line: 0};
+  var result_1140850792 = [];
+
+  var F = {procname: "barcode.\'bits", prev: framePtr, filename: "C:\\Users\\HamidB80\\Documents\\programming\\nim\\linear-barcode\\src\\barcode.nim", line: 0};
   framePtr = F;
-    F.line = 680;
-    result_1140850801 = new Array(len_1140850800); for (var i = 0 ; i < len_1140850800 ; ++i) { result_1140850801[i] = false; }  framePtr = F.prev;
-
-  return result_1140850801;
-
-}
-
-function bits_1140850790(n_1140850791, size_1140850792) {
-  var result_1140850793 = [];
-
-  var F = {procname: "barcode.bits", prev: framePtr, filename: "C:\\Users\\HamidB80\\Documents\\programming\\nim\\linear-barcode\\src\\barcode.nim", line: 0};
-  framePtr = F;
-    F.line = 22;
-    result_1140850793 = nimCopy(null, newSeq_1140850798(chckRange(size_1140850792, 0, 2147483647)), NTI1140850758);
-    F.line = 24;
-    var acc_1140850806 = n_1140850791;
     Label1: do {
-      F.line = 25;
-      var i_1140850812 = 0;
-      F.line = 6;
-      var colontmp__469762522 = 0;
-      F.line = 25;
-      colontmp__469762522 = subInt(size_1140850792, 1);
-      F.line = 33;
-      var res_469762523 = colontmp__469762522;
+      F.line = 22;
+      var b_1140850793 = 0;
+      F.line = 253;
+      var i_469762524 = 0;
+      F.line = 254;
+      var L_469762525 = (lit_1140850791).length;
       Label2: do {
-        F.line = 34;
+        F.line = 255;
           Label3: while (true) {
-          if (!(0 <= res_469762523)) break Label3;
-            F.line = 25;
-            i_1140850812 = res_469762523;
-            F.line = 26;
-            result_1140850793[chckIndx(i_1140850812, 0, (result_1140850793).length - 1)] = (modInt(acc_1140850806, 10) == 1);
-            F.line = 27;
-            acc_1140850806 = divInt(acc_1140850806, 10);
-            F.line = 36;
-            res_469762523 = subInt(res_469762523, 1);
+          if (!(i_469762524 < L_469762525)) break Label3;
+            F.line = 22;
+            b_1140850793 = lit_1140850791[chckIndx(i_469762524, 0, (lit_1140850791).length - 1)];
+            Label4: do {
+              F.line = 22;
+              F.line = 24;
+              switch (b_1140850793) {
+              case 49:
+                Temporary5 = true;
+                break;
+              case 48:
+                Temporary5 = false;
+                break;
+              case 95:
+                F.line = 27;
+                break Label4;
+                break;
+              default: 
+                F.line = 28;
+                raiseException({message: makeNimstrLit("not a valid bit"), parent: null, m_type: NTI33555125, name: null, trace: [], up: null}, "ValueError");
+                break;
+              }
+            } while (false);
+            result_1140850792.push(Temporary5);;
+            F.line = 257;
+            i_469762524 = addInt(i_469762524, 1);
+            if (!(((lit_1140850791).length == L_469762525))) {
+            F.line = 258;
+            failedAssertImpl_218103864(makeNimstrLit("C:\\Users\\HamidB80\\.choosenim\\toolchains\\nim-1.6.14\\lib\\system\\iterators.nim(258, 11) `len(a) == L` the length of the string changed while iterating over it"));
+            }
+            
           }
       } while (false);
     } while (false);
   framePtr = F.prev;
 
-  return result_1140850793;
+  return result_1140850792;
 
 }
 
@@ -8272,21 +8292,21 @@ function map_1140850731(s_1140850734, op_1140850736) {
       F.line = 386;
       var i_1140850753 = 0;
       F.line = 117;
-      var colontmp__469762526 = 0;
+      var colontmp__469762528 = 0;
       F.line = 386;
-      colontmp__469762526 = (s_1140850734).length;
+      colontmp__469762528 = (s_1140850734).length;
       F.line = 119;
-      var i_469762527 = 0;
+      var i_469762529 = 0;
       Label2: do {
         F.line = 120;
           Label3: while (true) {
-          if (!(i_469762527 < colontmp__469762526)) break Label3;
+          if (!(i_469762529 < colontmp__469762528)) break Label3;
             F.line = 386;
-            i_1140850753 = i_469762527;
+            i_1140850753 = i_469762529;
             F.line = 386;
             result_1140850737[chckIndx(i_1140850753, 0, (result_1140850737).length - 1)] = op_1140850736(s_1140850734[chckIndx(i_1140850753, 0, (s_1140850734).length - 1)]);
             F.line = 122;
-            i_469762527 = addInt(i_469762527, 1);
+            i_469762529 = addInt(i_469762529, 1);
           }
       } while (false);
     } while (false);
@@ -8322,90 +8342,72 @@ function not_1140850727(bc_1140850728) {
 
 }
 
-function bits_1140850813(u_1140850814) {
+function bits_1140850799(u_1140850800) {
     var Temporary1;
 
-  var result_1140850815 = [];
+  var result_1140850801 = [];
 
   var F = {procname: "barcode.bits", prev: framePtr, filename: "C:\\Users\\HamidB80\\Documents\\programming\\nim\\linear-barcode\\src\\barcode.nim", line: 0};
   framePtr = F;
-    F.line = 30;
-    F.line = 30;
-    switch (u_1140850814) {
+    F.line = 31;
+    F.line = 31;
+    switch (u_1140850800) {
     case 0:
-      Temporary1 = bits_1140850790(1101, 7);
+      Temporary1 = HEX27bits_1140850790(makeNimstrLit("0001101"));
       break;
     case 1:
-      Temporary1 = bits_1140850790(11001, 7);
+      Temporary1 = HEX27bits_1140850790(makeNimstrLit("0011001"));
       break;
     case 2:
-      Temporary1 = bits_1140850790(10011, 7);
+      Temporary1 = HEX27bits_1140850790(makeNimstrLit("0010011"));
       break;
     case 3:
-      Temporary1 = bits_1140850790(111101, 7);
+      Temporary1 = HEX27bits_1140850790(makeNimstrLit("0111101"));
       break;
     case 4:
-      Temporary1 = bits_1140850790(100011, 7);
+      Temporary1 = HEX27bits_1140850790(makeNimstrLit("0100011"));
       break;
     case 5:
-      Temporary1 = bits_1140850790(110001, 7);
+      Temporary1 = HEX27bits_1140850790(makeNimstrLit("0110001"));
       break;
     case 6:
-      Temporary1 = bits_1140850790(101111, 7);
+      Temporary1 = HEX27bits_1140850790(makeNimstrLit("0101111"));
       break;
     case 7:
-      Temporary1 = bits_1140850790(111011, 7);
+      Temporary1 = HEX27bits_1140850790(makeNimstrLit("0111011"));
       break;
     case 8:
-      Temporary1 = bits_1140850790(110111, 7);
+      Temporary1 = HEX27bits_1140850790(makeNimstrLit("0110111"));
       break;
     case 9:
-      Temporary1 = bits_1140850790(1011, 7);
+      Temporary1 = HEX27bits_1140850790(makeNimstrLit("0001011"));
       break;
     case 10:
-      Temporary1 = not_1140850727(bits_1140850813(0));
-      break;
     case 11:
-      Temporary1 = not_1140850727(bits_1140850813(1));
-      break;
     case 12:
-      Temporary1 = not_1140850727(bits_1140850813(2));
-      break;
     case 13:
-      Temporary1 = not_1140850727(bits_1140850813(3));
-      break;
     case 14:
-      Temporary1 = not_1140850727(bits_1140850813(4));
-      break;
     case 15:
-      Temporary1 = not_1140850727(bits_1140850813(5));
-      break;
     case 16:
-      Temporary1 = not_1140850727(bits_1140850813(6));
-      break;
     case 17:
-      Temporary1 = not_1140850727(bits_1140850813(7));
-      break;
     case 18:
-      Temporary1 = not_1140850727(bits_1140850813(8));
-      break;
     case 19:
-      Temporary1 = not_1140850727(bits_1140850813(9));
+      Temporary1 = not_1140850727(bits_1140850799(chckRange(subInt(u_1140850800, 10), 0, 22)));
       break;
     case 20:
-      Temporary1 = bits_1140850790(0, 9);
+      Temporary1 = HEX27bits_1140850790(makeNimstrLit("000_000_000"));
       break;
     case 21:
-      Temporary1 = bits_1140850790(101, 3);
+      Temporary1 = HEX27bits_1140850790(makeNimstrLit("101"));
       break;
     case 22:
-      Temporary1 = bits_1140850790(1010, 5);
+      Temporary1 = HEX27bits_1140850790(makeNimstrLit("01010"));
       break;
     }
-    result_1140850815 = nimCopy(null, Temporary1, NTI1140850750);
+    result_1140850801 = nimCopy(null, Temporary1, NTI1140850750);
   framePtr = F.prev;
 
-  return result_1140850815;
+  return result_1140850801;
 
 }
 
@@ -8515,7 +8517,7 @@ function HEX3Aanonymous_469762208(ev_469762209, n_469762210) {
     F.line = 49;
     var ds_469762211 = digits_469762066(cstrToNimstr(userInput_469762170[0]));
     F.line = 50;
-    var s_469762212 = checkDigitSum_1140850903(ds_469762211);
+    var s_469762212 = checkDigitSum_1140850944(ds_469762211);
     F.line = 52;
     var tmp_469762178 = tree_704643860(23, []);
     F.line = 52;
@@ -8605,7 +8607,7 @@ function HEX3Aanonymous_469762208(ev_469762209, n_469762210) {
     F.line = 75;
     add_704643797(tmp_469762184, text_469762113([HEX24_335544323(sup_469762220), makeNimstrLit(" - "), HEX24_335544323(s_469762212)]));
     F.line = 76;
-    add_704643797(tmp_469762184, text_469762113([makeNimstrLit(" = "), HEX24_335544323(checkDigit_1140850944(ds_469762211))]));
+    add_704643797(tmp_469762184, text_469762113([makeNimstrLit(" = "), HEX24_335544323(checkDigit_1140850985(ds_469762211))]));
     F.line = 76;
     add_704643797(tmp_469762182, tmp_469762184);
     F.line = 76;
@@ -8712,7 +8714,7 @@ function HEX3Aanonymous_469762208(ev_469762209, n_469762210) {
       F.line = 233;
       var colontmp__469762476 = [];
       F.line = 91;
-      colontmp__469762476 = toUpca_1140850960(ds_469762211);
+      colontmp__469762476 = toUpca_1140850998(ds_469762211);
       F.line = 235;
       var i_469762478 = 0;
       F.line = 236;
@@ -8732,7 +8734,7 @@ function HEX3Aanonymous_469762208(ev_469762209, n_469762210) {
             F.line = 93;
             tmp_469762197.class = "name";
             F.line = 94;
-            add_704643797(tmp_469762197, text_704643912(name_1140850896(g_469762234)));
+            add_704643797(tmp_469762197, text_704643912(name_1140850937(g_469762234)));
             F.line = 94;
             add_704643797(tmp_469762196, tmp_469762197);
             F.line = 96;
@@ -8745,7 +8747,7 @@ function HEX3Aanonymous_469762208(ev_469762209, n_469762210) {
               F.line = 233;
               var colontmp__469762471 = [];
               F.line = 97;
-              colontmp__469762471 = bits_1140850813(g_469762234);
+              colontmp__469762471 = bits_1140850799(g_469762234);
               F.line = 235;
               var i_469762473 = 0;
               F.line = 236;
@@ -8808,7 +8810,7 @@ function HEX3Aanonymous_469762208(ev_469762209, n_469762210) {
       F.line = 233;
       var colontmp__469762487 = [];
       F.line = 105;
-      colontmp__469762487 = toUpca_1140850960(ds_469762211);
+      colontmp__469762487 = toUpca_1140850998(ds_469762211);
       F.line = 235;
       var i_469762488 = 0;
       F.line = 236;
@@ -8825,7 +8827,7 @@ function HEX3Aanonymous_469762208(ev_469762209, n_469762210) {
               F.line = 233;
               var colontmp__469762483 = [];
               F.line = 106;
-              colontmp__469762483 = bits_1140850813(g_469762259);
+              colontmp__469762483 = bits_1140850799(g_469762259);
               F.line = 235;
               var i_469762484 = 0;
               F.line = 236;
@@ -8892,7 +8894,7 @@ function HEX3Aanonymous_469762208(ev_469762209, n_469762210) {
       } while (false);
     } while (false);
     F.line = 113;
-    add_704643797(tmp_469762204, text_704643912(HEX24_335544323(checkDigit_1140850944(ds_469762211))));
+    add_704643797(tmp_469762204, text_704643912(HEX24_335544323(checkDigit_1140850985(ds_469762211))));
     F.line = 113;
     add_704643797(tmp_469762200, tmp_469762204);
     F.line = 113;
