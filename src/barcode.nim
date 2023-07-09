@@ -9,6 +9,8 @@ type
   Parity = enum
     pOdd, pEven
 
+  Digit* = range[0..9]
+
 
 func negate(b: bool): bool = 
   not b
@@ -55,7 +57,7 @@ func bits*(us: seq[UpcA]): seq[bool] =
     result.add u.bits
 
 
-func digit(u: UpcA): int =
+func digit(u: UpcA): Digit =
   case u:
   of e0, o0: 0
   of e1, o1: 1
@@ -68,7 +70,7 @@ func digit(u: UpcA): int =
   of e8, o8: 8
   of e9, o9: 9
   else:
-    raise newException(ValueError, "not a number")
+    raise newException(ValueError, "not a digit")
 
 func name*(u: UpcA): string =
   case u:
@@ -79,19 +81,19 @@ func name*(u: UpcA): string =
   of uMiddleGuard: "middle guard"
 
 
-func supplement(n, base: int): int =
+func complement(n, base: int): int =
   if n mod base == 0: 0
   else: base - abs n mod 10
 
 
-func checkDigitSum*(digits: seq[int]): int =
+func checkDigitSum*(digits: seq[Digit]): int =
   for i, d in digits:
     result.inc:
       if i mod 2 == 1: d
       else: d * 3
 
-func checkDigit*(digits: seq[int]): int =
-  supplement checkDigitSum digits, 10
+func checkDigit*(digits: seq[Digit]): Digit =
+  complement checkDigitSum digits, 10
 
 
 func upca(n: range[0..9], parity: Parity): UpcA =
@@ -99,7 +101,7 @@ func upca(n: range[0..9], parity: Parity): UpcA =
   of pOdd: UpcA n
   of pEven: UpcA n+10
 
-func toUpca*(digits: seq[int]): seq[UpcA] =
+func toUpca*(digits: seq[Digit]): seq[UpcA] =
   assert digits.len == 11
 
   template `>>`(smth): untyped =

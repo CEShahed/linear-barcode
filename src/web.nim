@@ -4,10 +4,10 @@ import barcode
 
 # utils -------------------------------------
 
-func parseDigit*(ch: char): int =
-  ch.ord - '0'.ord
+func parseDigit*(ch: char): Digit =
+  Digit ch.ord - '0'.ord
 
-func digits*(s: string): seq[int] =
+func digits*(s: string): seq[Digit] =
   map s, parseDigit
 
 # html -------------------------------------
@@ -37,78 +37,84 @@ proc createDom: VNode =
     tdiv:
       input(maxlength = "11"):
         proc onkeyup(ev: Event; n: VNode) =
-          userInput = n.text
+          userInput = n.text.substr(0, 11)
+          n.value = userInput
 
       text $(userInput.len), "/11"
 
     h2: text "Steps"
     if userInput.len == 11:
-      let
-        ds = digits $userInput
-        s = checkDigitSum ds
+      try:
+        let
+          ds = digits $userInput
+          s = checkDigitSum ds
 
-      h3: text "calculating the 'check digit'"
-      tdiv(class = "indent"):
-
-        h4: text "sum"
+        h3: text "calculating the 'check digit'"
         tdiv(class = "indent"):
-          for i, d in ds:
-            if i != 0:
-              text " + "
 
-            if i mod 2 == 0:
-              text "(", $d, " * 3)"
-            else:
-              text $d
-
-          text " = ", $s
-
-        p:
-          let sup =
-            if s mod 10 == 0: s div 10 * 10
-            else: (s div 10 + 1) * 10
-
-          h4: text "10 complement"
+          h4: text "sum"
           tdiv(class = "indent"):
-            text $sup, " - ", $s
-            text " = ", $ checkDigit ds
+            for i, d in ds:
+              if i != 0:
+                text " + "
 
-      h3: text "matching digits with the pattern"
-      table(class = "indent"):
-        tr:
-          td: text "S"
-          td: text "B"
-          for i in 1..6: td: text "O"
-          td: text "M"
-          for i in 1..6: td: text "E"
-          td: text "B"
-          td: text "S"
+              if i mod 2 == 0:
+                text "(", $d, " * 3)"
+              else:
+                text $d
+
+            text " = ", $s
+
+          p:
+            let sup =
+              if s mod 10 == 0: s div 10 * 10
+              else: (s div 10 + 1) * 10
+
+            h4: text "10's complement"
+            tdiv(class = "indent"):
+              text $sup, " - ", $s
+              text " = ", $ checkDigit ds
+
+        h3: text "matching digits with the pattern"
+        table(class = "indent"):
+          tr:
+            td: text "S"
+            td: text "B"
+            for i in 1..6: td: text "O"
+            td: text "M"
+            for i in 1..6: td: text "E"
+            td: text "B"
+            td: text "S"
 
 
-      tdiv(class = "steps wrapper"):
-        for g in toUPCA ds:
-          tdiv(class = "upca-slice wrapper"):
-            span(class = "name"):
-              text g.name
+        tdiv(class = "steps wrapper"):
+          for g in toUPCA ds:
+            tdiv(class = "upca-slice wrapper"):
+              span(class = "name"):
+                text g.name
 
-            tdiv(class = "box"):
+              tdiv(class = "box"):
+                for b in bits g:
+                  tdiv(class = "bit " & kstring(b.color))
+
+        tdiv(class = "final wrapper"):
+          h2:
+            text "final result"
+
+          tdiv(class = "barcode"):
+            for g in toUPCA ds:
               for b in bits g:
                 tdiv(class = "bit " & kstring(b.color))
 
-      tdiv(class = "final wrapper"):
-        h2:
-          text "final result"
+          span:
+            for d in ds:
+              text $d
 
-        tdiv(class = "barcode"):
-          for g in toUPCA ds:
-            for b in bits g:
-              tdiv(class = "bit " & kstring(b.color))
-
-        span:
-          for d in ds:
-            text $d
-
-          text $checkDigit ds
+            text $checkDigit ds
+  
+      except RangeDefect:
+        tdiv(class="error"):
+          text "barcode must only contain digits from 0 to 9"
 
     footer:
       p:
