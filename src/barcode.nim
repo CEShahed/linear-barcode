@@ -66,7 +66,7 @@ func name*(u: UpcA): string =
 
 func complement(n, base: int): int =
   if n mod base == 0: 0
-  else: base - abs n mod 10
+  else: base - abs n mod base
 
 func checkDigitSum*(digits: seq[Digit]): int =
   for i, d in digits:
