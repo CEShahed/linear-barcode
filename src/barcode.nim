@@ -89,8 +89,8 @@ func complement(n, base: int): int =
 func checkDigitSum*(digits: seq[Digit]): int =
   for i, d in digits:
     result.inc:
-      if i mod 2 == 1: d
-      else: d * 3
+      if i mod 2 == 1: d.int
+      else: d.int * 3
 
 func checkDigit*(digits: seq[Digit]): Digit =
   complement checkDigitSum digits, 10

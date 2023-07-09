@@ -111,9 +111,9 @@ proc createDom: VNode =
               text $d
 
             text $checkDigit ds
-  
+
       except RangeDefect:
-        tdiv(class="error"):
+        tdiv(class = "error"):
           text "barcode must only contain digits from 0 to 9"
 
     footer:
@@ -129,4 +129,5 @@ proc createDom: VNode =
 
 
 when isMainModule:
+  echo "compiled at: ", CompileDate
   setRenderer createDom
