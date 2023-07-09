@@ -129,5 +129,5 @@ proc createDom: VNode =
 
 
 when isMainModule:
-  echo "compiled at: ", CompileDate
+  echo "compiled at: ", CompileDate, " ", CompileTime
   setRenderer createDom

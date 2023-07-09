@@ -10,7 +10,7 @@ bin           = @["barcode"]
 
 # Dependencies
 
-requires "nim >= 1.6.6"
+requires "nim >= 1.6.14"
 requires "karax >= 1.2.2"
 
 # Tasks
