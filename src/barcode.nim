@@ -64,7 +64,7 @@ func name*(u: UpcA): string =
   of uMiddleGuard: "middle guard"
 
 
-func complement(n, base: int): int =
+func complement(n: int, base: Positive): int =
   if n mod base == 0: 0
   else: base - abs n mod base
 
