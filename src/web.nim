@@ -92,7 +92,6 @@ proc createDom: VNode =
             tdiv(class = "upca-slice wrapper"):
               span(class = "name"):
                 text g.name
-                text $g.bits.len
 
               tdiv(class = "box"):
                 for b in bits g:
