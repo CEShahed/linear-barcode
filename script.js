@@ -5641,17 +5641,17 @@ function addChars_251658415(result_251658417, result_251658417_Idx, x_251658418,
       F.line = 46;
       var iHEX60gensym4_251658435 = 0;
       F.line = 119;
-      var i_469762374 = 0;
+      var i_469762371 = 0;
       Label2: do {
         F.line = 120;
           Label3: while (true) {
-          if (!(i_469762374 < n_251658420)) break Label3;
+          if (!(i_469762371 < n_251658420)) break Label3;
             F.line = 49;
-            iHEX60gensym4_251658435 = i_469762374;
+            iHEX60gensym4_251658435 = i_469762371;
             F.line = 49;
             result_251658417[result_251658417_Idx][chckIndx(addInt(old_251658421, iHEX60gensym4_251658435), 0, (result_251658417[result_251658417_Idx]).length - 1)] = x_251658418.charCodeAt(chckIndx(addInt(start_251658419, iHEX60gensym4_251658435), 0, (x_251658418).length - 1));
             F.line = 122;
-            i_469762374 = addInt(i_469762374, 1);
+            i_469762371 = addInt(i_469762371, 1);
           }
       } while (false);
     } while (false);
@@ -5739,13 +5739,13 @@ function auxWriteStackTrace_33556559(f_33556560) {
     
     Label6: do {
       var j_33556602 = 0;
-      var colontmp__469762366 = 0;
-      colontmp__469762366 = (i_33556570 - 1);
-      var res_469762368 = colontmp__469762366;
+      var colontmp__469762363 = 0;
+      colontmp__469762363 = (i_33556570 - 1);
+      var res_469762365 = colontmp__469762363;
       Label7: do {
           Label8: while (true) {
-          if (!(0 <= res_469762368)) break Label8;
-            j_33556602 = res_469762368;
+          if (!(0 <= res_469762365)) break Label8;
+            j_33556602 = res_469762365;
             result_33556561[0].push.apply(result_33556561[0], cstrToNimstr(tempFrames_33556572[j_33556602].Field2));;
             if ((0 < tempFrames_33556572[j_33556602].Field1)) {
             result_33556561[0].push.apply(result_33556561[0], makeNimstrLit("("));;
@@ -5761,7 +5761,7 @@ function auxWriteStackTrace_33556559(f_33556560) {
             result_33556561[0].push.apply(result_33556561[0], makeNimstrLit(" at "));;
             add_33556419(result_33556561, 0, tempFrames_33556572[j_33556602].Field0);
             result_33556561[0].push.apply(result_33556561[0], makeNimstrLit("\x0A"));;
-            res_469762368 -= 1;
+            res_469762365 -= 1;
           }
       } while (false);
     } while (false);
@@ -6105,21 +6105,21 @@ function applyEvents_671088900(n_671088901) {
       F.line = 147;
       var i_671088910 = 0;
       F.line = 117;
-      var colontmp__469762397 = 0;
+      var colontmp__469762394 = 0;
       F.line = 147;
-      colontmp__469762397 = (n_671088901.events).length;
+      colontmp__469762394 = (n_671088901.events).length;
       F.line = 119;
-      var i_469762398 = 0;
+      var i_469762395 = 0;
       Label2: do {
         F.line = 120;
           Label3: while (true) {
-          if (!(i_469762398 < colontmp__469762397)) break Label3;
+          if (!(i_469762395 < colontmp__469762394)) break Label3;
             F.line = 147;
-            i_671088910 = i_469762398;
+            i_671088910 = i_469762395;
             F.line = 147;
             n_671088901.events[chckIndx(i_671088910, 0, (n_671088901.events).length - 1)]["Field2"] = wrapEvent_671088794(dest_671088902, n_671088901, n_671088901.events[chckIndx(i_671088910, 0, (n_671088901.events).length - 1)]["Field0"], n_671088901.events[chckIndx(i_671088910, 0, (n_671088901.events).length - 1)]["Field1"]);
             F.line = 122;
-            i_469762398 = addInt(i_469762398, 1);
+            i_469762395 = addInt(i_469762395, 1);
           }
       } while (false);
     } while (false);
@@ -6137,21 +6137,21 @@ function applyStyle_771752434(n_771752435, s_771752436) {
       F.line = 339;
       var i_771752449 = 0;
       F.line = 43;
-      var colontmp__469762401 = 0;
+      var colontmp__469762398 = 0;
       F.line = 339;
-      colontmp__469762401 = subInt(s_771752436.length, 1);
+      colontmp__469762398 = subInt(s_771752436.length, 1);
       F.line = 65;
-      var res_469762402 = 0;
+      var res_469762399 = 0;
       Label2: do {
         F.line = 66;
           Label3: while (true) {
-          if (!(res_469762402 <= colontmp__469762401)) break Label3;
+          if (!(res_469762399 <= colontmp__469762398)) break Label3;
             F.line = 339;
-            i_771752449 = res_469762402;
+            i_771752449 = res_469762399;
             F.line = 339;
             n_771752435.style[s_771752436[i_771752449]] = s_771752436[addInt(i_771752449, 1)];
             F.line = 68;
-            res_469762402 = addInt(res_469762402, 2);
+            res_469762399 = addInt(res_469762399, 2);
           }
       } while (false);
     } while (false);
@@ -6296,25 +6296,25 @@ function toDom_671088928(n_671088929, useAttachedNode_671088930, kxi_671088931) 
         var k_671089041 = null;
         Label2: do {
           F.line = 333;
-          var i_469762382 = 0;
+          var i_469762379 = 0;
           F.line = 117;
-          var colontmp__469762383 = 0;
+          var colontmp__469762380 = 0;
           F.line = 333;
-          colontmp__469762383 = (n_671088929.kids).length;
+          colontmp__469762380 = (n_671088929.kids).length;
           F.line = 119;
-          var i_469762384 = 0;
+          var i_469762381 = 0;
           Label3: do {
             F.line = 120;
               Label4: while (true) {
-              if (!(i_469762384 < colontmp__469762383)) break Label4;
+              if (!(i_469762381 < colontmp__469762380)) break Label4;
                 F.line = 333;
-                i_469762382 = i_469762384;
+                i_469762379 = i_469762381;
                 F.line = 195;
-                k_671089041 = n_671088929.kids[chckIndx(i_469762382, 0, (n_671088929.kids).length - 1)];
+                k_671089041 = n_671088929.kids[chckIndx(i_469762379, 0, (n_671088929.kids).length - 1)];
                 F.line = 195;
                 result_671088932.appendChild(toDom_671088928(k_671089041, useAttachedNode_671088930, kxi_671088931));
                 F.line = 122;
-                i_469762384 = addInt(i_469762384, 1);
+                i_469762381 = addInt(i_469762381, 1);
               }
           } while (false);
         } while (false);
@@ -6343,30 +6343,30 @@ function toDom_671088928(n_671088929, useAttachedNode_671088930, kxi_671088931) 
       var v_671089043 = null;
       Label6: do {
         F.line = 336;
-        var i_469762392 = 0;
+        var i_469762389 = 0;
         F.line = 43;
-        var colontmp__469762393 = 0;
+        var colontmp__469762390 = 0;
         F.line = 336;
-        colontmp__469762393 = subInt((n_671088929.attrs).length, 2);
+        colontmp__469762390 = subInt((n_671088929.attrs).length, 2);
         F.line = 65;
-        var res_469762394 = 0;
+        var res_469762391 = 0;
         Label7: do {
           F.line = 66;
             Label8: while (true) {
-            if (!(res_469762394 <= colontmp__469762393)) break Label8;
+            if (!(res_469762391 <= colontmp__469762390)) break Label8;
               F.line = 336;
-              i_469762392 = res_469762394;
+              i_469762389 = res_469762391;
               F.line = 206;
-              k_671089042 = n_671088929.attrs[chckIndx(i_469762392, 0, (n_671088929.attrs).length - 1)];
+              k_671089042 = n_671088929.attrs[chckIndx(i_469762389, 0, (n_671088929.attrs).length - 1)];
               F.line = 206;
-              v_671089043 = n_671088929.attrs[chckIndx(addInt(i_469762392, 1), 0, (n_671088929.attrs).length - 1)];
+              v_671089043 = n_671088929.attrs[chckIndx(addInt(i_469762389, 1), 0, (n_671088929.attrs).length - 1)];
               if (!((v_671089043 == null))) {
               F.line = 208;
               result_671088932.setAttribute(k_671089042, v_671089043);
               }
               
               F.line = 68;
-              res_469762394 = addInt(res_469762394, 2);
+              res_469762391 = addInt(res_469762391, 2);
             }
         } while (false);
       } while (false);
@@ -6476,17 +6476,17 @@ function same_671089082(n_671089083, e_671089084, nesting_671089085) {
       F.line = 233;
       var i_671089122 = 0;
       F.line = 117;
-      var colontmp__469762405 = 0;
+      var colontmp__469762402 = 0;
       F.line = 233;
-      colontmp__469762405 = len_704643782(n_671089083);
+      colontmp__469762402 = len_704643782(n_671089083);
       F.line = 119;
-      var i_469762406 = 0;
+      var i_469762403 = 0;
       Label4: do {
         F.line = 120;
           Label5: while (true) {
-          if (!(i_469762406 < colontmp__469762405)) break Label5;
+          if (!(i_469762403 < colontmp__469762402)) break Label5;
             F.line = 233;
-            i_671089122 = i_469762406;
+            i_671089122 = i_469762403;
             if (!(same_671089082(HEX5BHEX5D_704643789(n_671089083, i_671089122), e_671089084.childNodes[i_671089122], addInt(nesting_671089085, 1)))) {
             F.line = 234;
             result_671089086 = false;
@@ -6494,7 +6494,7 @@ function same_671089082(n_671089083, e_671089084, nesting_671089085) {
             }
             
             F.line = 122;
-            i_469762406 = addInt(i_469762406, 1);
+            i_469762403 = addInt(i_469762403, 1);
           }
       } while (false);
     } while (false);
@@ -6547,17 +6547,17 @@ function eq_771752195(a_771752196, b_771752197) {
       F.line = 240;
       var i_771752233 = 0;
       F.line = 117;
-      var colontmp__469762432 = 0;
+      var colontmp__469762429 = 0;
       F.line = 240;
-      colontmp__469762432 = a_771752196.length;
+      colontmp__469762429 = a_771752196.length;
       F.line = 119;
-      var i_469762433 = 0;
+      var i_469762430 = 0;
       Label2: do {
         F.line = 120;
           Label3: while (true) {
-          if (!(i_469762433 < colontmp__469762432)) break Label3;
+          if (!(i_469762430 < colontmp__469762429)) break Label3;
             F.line = 240;
-            i_771752233 = i_469762433;
+            i_771752233 = i_469762430;
             if (!((a_771752196[i_771752233] == b_771752197[i_771752233]))) {
             F.line = 241;
             result_771752198 = false;
@@ -6565,7 +6565,7 @@ function eq_771752195(a_771752196, b_771752197) {
             }
             
             F.line = 122;
-            i_469762433 = addInt(i_469762433, 1);
+            i_469762430 = addInt(i_469762430, 1);
           }
       } while (false);
     } while (false);
@@ -6605,17 +6605,17 @@ function sameAttrs_704643945(a_704643946, b_704643947) {
       F.line = 342;
       var i_704643962 = 0;
       F.line = 117;
-      var colontmp__469762436 = 0;
+      var colontmp__469762433 = 0;
       F.line = 342;
-      colontmp__469762436 = (a_704643946.attrs).length;
+      colontmp__469762433 = (a_704643946.attrs).length;
       F.line = 119;
-      var i_469762437 = 0;
+      var i_469762434 = 0;
       Label2: do {
         F.line = 120;
           Label3: while (true) {
-          if (!(i_469762437 < colontmp__469762436)) break Label3;
+          if (!(i_469762434 < colontmp__469762433)) break Label3;
             F.line = 342;
-            i_704643962 = i_469762437;
+            i_704643962 = i_469762434;
             if (!((a_704643946.attrs[chckIndx(i_704643962, 0, (a_704643946.attrs).length - 1)] == b_704643947.attrs[chckIndx(i_704643962, 0, (b_704643947.attrs).length - 1)]))) {
             F.line = 343;
             result_704643948 = false;
@@ -6623,7 +6623,7 @@ function sameAttrs_704643945(a_704643946, b_704643947) {
             }
             
             F.line = 122;
-            i_469762437 = addInt(i_469762437, 1);
+            i_469762434 = addInt(i_469762434, 1);
           }
       } while (false);
     } while (false);
@@ -6692,17 +6692,17 @@ function eq_671089136(a_671089137, b_671089138, recursive_671089139) {
       F.line = 279;
       var i_671089157 = 0;
       F.line = 117;
-      var colontmp__469762424 = 0;
+      var colontmp__469762421 = 0;
       F.line = 279;
-      colontmp__469762424 = len_704643782(a_671089137);
+      colontmp__469762421 = len_704643782(a_671089137);
       F.line = 119;
-      var i_469762425 = 0;
+      var i_469762422 = 0;
       Label2: do {
         F.line = 120;
           Label3: while (true) {
-          if (!(i_469762425 < colontmp__469762424)) break Label3;
+          if (!(i_469762422 < colontmp__469762421)) break Label3;
             F.line = 279;
-            i_671089157 = i_469762425;
+            i_671089157 = i_469762422;
             if ((eq_671089136(HEX5BHEX5D_704643789(a_671089137, i_671089157), HEX5BHEX5D_704643789(b_671089138, i_671089157), recursive_671089139) == 1)) {
             F.line = 280;
             result_671089140 = 1;
@@ -6710,7 +6710,7 @@ function eq_671089136(a_671089137, b_671089138, recursive_671089139) {
             }
             
             F.line = 122;
-            i_469762425 = addInt(i_469762425, 1);
+            i_469762422 = addInt(i_469762422, 1);
           }
       } while (false);
     } while (false);
@@ -6774,17 +6774,17 @@ function eq_671089136(a_671089137, b_671089138, recursive_671089139) {
       F.line = 312;
       var i_671089183 = 0;
       F.line = 117;
-      var colontmp__469762428 = 0;
+      var colontmp__469762425 = 0;
       F.line = 312;
-      colontmp__469762428 = len_704643782(a_671089137);
+      colontmp__469762425 = len_704643782(a_671089137);
       F.line = 119;
-      var i_469762429 = 0;
+      var i_469762426 = 0;
       Label8: do {
         F.line = 120;
           Label9: while (true) {
-          if (!(i_469762429 < colontmp__469762428)) break Label9;
+          if (!(i_469762426 < colontmp__469762425)) break Label9;
             F.line = 312;
-            i_671089183 = i_469762429;
+            i_671089183 = i_469762426;
             if (!((eq_671089136(HEX5BHEX5D_704643789(a_671089137, i_671089183), HEX5BHEX5D_704643789(b_671089138, i_671089183), true) == 3))) {
             F.line = 314;
             result_671089140 = 1;
@@ -6792,7 +6792,7 @@ function eq_671089136(a_671089137, b_671089138, recursive_671089139) {
             }
             
             F.line = 122;
-            i_469762429 = addInt(i_469762429, 1);
+            i_469762426 = addInt(i_469762426, 1);
           }
       } while (false);
     } while (false);
@@ -6856,27 +6856,27 @@ function updateAttributes_671089226(newNode_671089227, oldNode_671089228) {
       var __671089234 = null;
       Label2: do {
         F.line = 336;
-        var i_469762441 = 0;
+        var i_469762438 = 0;
         F.line = 43;
-        var colontmp__469762442 = 0;
+        var colontmp__469762439 = 0;
         F.line = 336;
-        colontmp__469762442 = subInt((oldNode_671089228.attrs).length, 2);
+        colontmp__469762439 = subInt((oldNode_671089228.attrs).length, 2);
         F.line = 65;
-        var res_469762443 = 0;
+        var res_469762440 = 0;
         Label3: do {
           F.line = 66;
             Label4: while (true) {
-            if (!(res_469762443 <= colontmp__469762442)) break Label4;
+            if (!(res_469762440 <= colontmp__469762439)) break Label4;
               F.line = 336;
-              i_469762441 = res_469762443;
+              i_469762438 = res_469762440;
               F.line = 333;
-              k_671089233 = oldNode_671089228.attrs[chckIndx(i_469762441, 0, (oldNode_671089228.attrs).length - 1)];
+              k_671089233 = oldNode_671089228.attrs[chckIndx(i_469762438, 0, (oldNode_671089228.attrs).length - 1)];
               F.line = 333;
-              __671089234 = oldNode_671089228.attrs[chckIndx(addInt(i_469762441, 1), 0, (oldNode_671089228.attrs).length - 1)];
+              __671089234 = oldNode_671089228.attrs[chckIndx(addInt(i_469762438, 1), 0, (oldNode_671089228.attrs).length - 1)];
               F.line = 333;
               oldNode_671089228.dom.removeAttribute(k_671089233);
               F.line = 68;
-              res_469762443 = addInt(res_469762443, 2);
+              res_469762440 = addInt(res_469762440, 2);
             }
         } while (false);
       } while (false);
@@ -6888,30 +6888,30 @@ function updateAttributes_671089226(newNode_671089227, oldNode_671089228) {
       var v_671089236 = null;
       Label6: do {
         F.line = 336;
-        var i_469762447 = 0;
+        var i_469762444 = 0;
         F.line = 43;
-        var colontmp__469762448 = 0;
+        var colontmp__469762445 = 0;
         F.line = 336;
-        colontmp__469762448 = subInt((newNode_671089227.attrs).length, 2);
+        colontmp__469762445 = subInt((newNode_671089227.attrs).length, 2);
         F.line = 65;
-        var res_469762449 = 0;
+        var res_469762446 = 0;
         Label7: do {
           F.line = 66;
             Label8: while (true) {
-            if (!(res_469762449 <= colontmp__469762448)) break Label8;
+            if (!(res_469762446 <= colontmp__469762445)) break Label8;
               F.line = 336;
-              i_469762447 = res_469762449;
+              i_469762444 = res_469762446;
               F.line = 335;
-              k_671089235 = newNode_671089227.attrs[chckIndx(i_469762447, 0, (newNode_671089227.attrs).length - 1)];
+              k_671089235 = newNode_671089227.attrs[chckIndx(i_469762444, 0, (newNode_671089227.attrs).length - 1)];
               F.line = 335;
-              v_671089236 = newNode_671089227.attrs[chckIndx(addInt(i_469762447, 1), 0, (newNode_671089227.attrs).length - 1)];
+              v_671089236 = newNode_671089227.attrs[chckIndx(addInt(i_469762444, 1), 0, (newNode_671089227.attrs).length - 1)];
               if (!((v_671089236 == null))) {
               F.line = 337;
               oldNode_671089228.dom.setAttribute(k_671089235, v_671089236);
               }
               
               F.line = 68;
-              res_469762449 = addInt(res_469762449, 2);
+              res_469762446 = addInt(res_469762446, 2);
             }
         } while (false);
       } while (false);
@@ -6935,17 +6935,17 @@ function getAttr_704643761(n_704643762, key_704643763) {
       F.line = 270;
       var i_704643773 = 0;
       F.line = 43;
-      var colontmp__469762452 = 0;
+      var colontmp__469762449 = 0;
       F.line = 270;
-      colontmp__469762452 = subInt((n_704643762.attrs).length, 2);
+      colontmp__469762449 = subInt((n_704643762.attrs).length, 2);
       F.line = 65;
-      var res_469762453 = 0;
+      var res_469762450 = 0;
       Label2: do {
         F.line = 66;
           Label3: while (true) {
-          if (!(res_469762453 <= colontmp__469762452)) break Label3;
+          if (!(res_469762450 <= colontmp__469762449)) break Label3;
             F.line = 270;
-            i_704643773 = res_469762453;
+            i_704643773 = res_469762450;
             if ((n_704643762.attrs[chckIndx(i_704643773, 0, (n_704643762.attrs).length - 1)] == key_704643763)) {
             F.line = 271;
             result_704643764 = n_704643762.attrs[chckIndx(addInt(i_704643773, 1), 0, (n_704643762.attrs).length - 1)];
@@ -6953,7 +6953,7 @@ function getAttr_704643761(n_704643762, key_704643763) {
             }
             
             F.line = 68;
-            res_469762453 = addInt(res_469762453, 2);
+            res_469762450 = addInt(res_469762450, 2);
           }
       } while (false);
     } while (false);
@@ -6972,21 +6972,21 @@ function removeAllEventHandlers_671088758(d_671088759) {
       F.line = 97;
       var i_671088775 = 0;
       F.line = 117;
-      var colontmp__469762456 = 0;
+      var colontmp__469762453 = 0;
       F.line = 97;
-      colontmp__469762456 = d_671088759.karaxEvents.length;
+      colontmp__469762453 = d_671088759.karaxEvents.length;
       F.line = 119;
-      var i_469762457 = 0;
+      var i_469762454 = 0;
       Label2: do {
         F.line = 120;
           Label3: while (true) {
-          if (!(i_469762457 < colontmp__469762456)) break Label3;
+          if (!(i_469762454 < colontmp__469762453)) break Label3;
             F.line = 97;
-            i_671088775 = i_469762457;
+            i_671088775 = i_469762454;
             F.line = 97;
             d_671088759.removeEventListener(d_671088759.karaxEvents[i_671088775]["Field0"], d_671088759.karaxEvents[i_671088775]["Field1"]);
             F.line = 122;
-            i_469762457 = addInt(i_469762457, 1);
+            i_469762454 = addInt(i_469762454, 1);
           }
       } while (false);
     } while (false);
@@ -7164,21 +7164,21 @@ function diff_671089381(newNode_671089382, oldNode_671089383, parent_671089384, 
         F.line = 527;
         var i_671089451 = 0;
         F.line = 75;
-        var colontmp__469762411 = 0;
+        var colontmp__469762408 = 0;
         F.line = 527;
-        colontmp__469762411 = subInt(pos_671089446, 1);
+        colontmp__469762408 = subInt(pos_671089446, 1);
         F.line = 90;
-        var res_469762412 = commonPrefix_671089423;
+        var res_469762409 = commonPrefix_671089423;
         Label9: do {
           F.line = 91;
             Label10: while (true) {
-            if (!(res_469762412 <= colontmp__469762411)) break Label10;
+            if (!(res_469762409 <= colontmp__469762408)) break Label10;
               F.line = 527;
-              i_671089451 = res_469762412;
+              i_671089451 = res_469762409;
               F.line = 527;
               diff_671089381(HEX5BHEX5D_704643789(newNode_671089382, i_671089451), HEX5BHEX5D_704643789(oldNode_671089383, i_671089451), current_671089385, HEX5BHEX5D_704643789(oldNode_671089383, i_671089451).dom, kxi_671089386);
               F.line = 93;
-              res_469762412 = addInt(res_469762412, 1);
+              res_469762409 = addInt(res_469762409, 1);
             }
         } while (false);
       } while (false);
@@ -7187,17 +7187,17 @@ function diff_671089381(newNode_671089382, oldNode_671089383, parent_671089384, 
         F.line = 531;
         var i_671089456 = 0;
         F.line = 90;
-        var res_469762415 = pos_671089446;
+        var res_469762412 = pos_671089446;
         Label12: do {
           F.line = 91;
             Label13: while (true) {
-            if (!(res_469762415 <= newPos_671089433)) break Label13;
+            if (!(res_469762412 <= newPos_671089433)) break Label13;
               F.line = 531;
-              i_671089456 = res_469762415;
+              i_671089456 = res_469762412;
               F.line = 531;
               addPatch_671089246(kxi_671089386, 2, current_671089385, null, HEX5BHEX5D_704643789(newNode_671089382, i_671089456), null);
               F.line = 93;
-              res_469762415 = addInt(res_469762415, 1);
+              res_469762412 = addInt(res_469762412, 1);
             }
         } while (false);
       } while (false);
@@ -7209,17 +7209,17 @@ function diff_671089381(newNode_671089382, oldNode_671089383, parent_671089384, 
           F.line = 535;
           var i_671089462 = 0;
           F.line = 90;
-          var res_469762418 = pos_671089446;
+          var res_469762415 = pos_671089446;
           Label15: do {
             F.line = 91;
               Label16: while (true) {
-              if (!(res_469762418 <= newPos_671089433)) break Label16;
+              if (!(res_469762415 <= newPos_671089433)) break Label16;
                 F.line = 535;
-                i_671089462 = res_469762418;
+                i_671089462 = res_469762415;
                 F.line = 535;
                 addPatch_671089246(kxi_671089386, 3, current_671089385, before_671089457, HEX5BHEX5D_704643789(newNode_671089382, i_671089462), null);
                 F.line = 93;
-                res_469762418 = addInt(res_469762418, 1);
+                res_469762415 = addInt(res_469762415, 1);
               }
           } while (false);
         } while (false);
@@ -7229,19 +7229,19 @@ function diff_671089381(newNode_671089382, oldNode_671089383, parent_671089384, 
         F.line = 538;
         var i_671089467 = 0;
         F.line = 90;
-        var res_469762421 = pos_671089446;
+        var res_469762418 = pos_671089446;
         Label18: do {
           F.line = 91;
             Label19: while (true) {
-            if (!(res_469762421 <= oldPos_671089432)) break Label19;
+            if (!(res_469762418 <= oldPos_671089432)) break Label19;
               F.line = 538;
-              i_671089467 = res_469762421;
+              i_671089467 = res_469762418;
               F.line = 538;
               addPatch_671089246(kxi__, 4, null, null, null, HEX5BHEX5D_704643789(oldNode_671089383, i_671089467));
               F.line = 538;
               addPatch_671089246(kxi_671089386, 1, current_671089385, current_671089385.childNodes[chckIndx(i_671089467, 0, (current_671089385.childNodes).length - 1)], null, null);
               F.line = 93;
-              res_469762421 = addInt(res_469762421, 1);
+              res_469762418 = addInt(res_469762418, 1);
             }
         } while (false);
       } while (false);
@@ -7340,21 +7340,21 @@ function moveDom_671089311(dest_671089312, src_671089313) {
       F.line = 399;
       var i_671089329 = 0;
       F.line = 117;
-      var colontmp__469762467 = 0;
+      var colontmp__469762464 = 0;
       F.line = 399;
-      colontmp__469762467 = len_704643782(dest_671089312);
+      colontmp__469762464 = len_704643782(dest_671089312);
       F.line = 119;
-      var i_469762468 = 0;
+      var i_469762465 = 0;
       Label2: do {
         F.line = 120;
           Label3: while (true) {
-          if (!(i_469762468 < colontmp__469762467)) break Label3;
+          if (!(i_469762465 < colontmp__469762464)) break Label3;
             F.line = 399;
-            i_671089329 = i_469762468;
+            i_671089329 = i_469762465;
             F.line = 399;
             moveDom_671089311(HEX5BHEX5D_704643789(dest_671089312, i_671089329), HEX5BHEX5D_704643789(src_671089313, i_671089329));
             F.line = 122;
-            i_469762468 = addInt(i_469762468, 1);
+            i_469762465 = addInt(i_469762465, 1);
           }
       } while (false);
     } while (false);
@@ -7380,13 +7380,13 @@ function applyPatch_671089330(kxi_671089331) {
       F.line = 403;
       var i_671089336 = 0;
       F.line = 119;
-      var i_469762461 = 0;
+      var i_469762458 = 0;
       Label2: do {
         F.line = 120;
           Label3: while (true) {
-          if (!(i_469762461 < kxi_671089331.patchLen)) break Label3;
+          if (!(i_469762458 < kxi_671089331.patchLen)) break Label3;
             F.line = 403;
-            i_671089336 = i_469762461;
+            i_671089336 = i_469762458;
             F.line = 404;
             var p_671089337 = nimCopy(null, kxi_671089331.patches[chckIndx(i_671089336, 0, (kxi_671089331.patches).length - 1)], NTI671088646);
             F.line = 403;
@@ -7457,7 +7457,7 @@ function applyPatch_671089330(kxi_671089331) {
               break;
             }
             F.line = 122;
-            i_469762461 = addInt(i_469762461, 1);
+            i_469762458 = addInt(i_469762458, 1);
           }
       } while (false);
     } while (false);
@@ -7467,13 +7467,13 @@ function applyPatch_671089330(kxi_671089331) {
       F.line = 434;
       var i_671089368 = 0;
       F.line = 119;
-      var i_469762464 = 0;
+      var i_469762461 = 0;
       Label5: do {
         F.line = 120;
           Label6: while (true) {
-          if (!(i_469762464 < kxi_671089331.patchLenV)) break Label6;
+          if (!(i_469762461 < kxi_671089331.patchLenV)) break Label6;
             F.line = 434;
-            i_671089368 = i_469762464;
+            i_671089368 = i_469762461;
             F.line = 435;
             var p_671089369 = nimCopy(null, kxi_671089331.patchesV[chckIndx(i_671089368, 0, (kxi_671089331.patchesV).length - 1)], NTI671088647);
             F.line = 434;
@@ -7484,7 +7484,7 @@ function applyPatch_671089330(kxi_671089331) {
             }
             
             F.line = 122;
-            i_469762464 = addInt(i_469762464, 1);
+            i_469762461 = addInt(i_469762461, 1);
           }
       } while (false);
     } while (false);
@@ -7739,17 +7739,17 @@ function tree_704643860(kind_704643861, kids_704643862) {
       F.line = 314;
       var k_704643875 = null;
       F.line = 8;
-      var i_469762510 = 0;
+      var i_469762507 = 0;
       Label2: do {
         F.line = 9;
           Label3: while (true) {
-          if (!(i_469762510 < (kids_704643862).length)) break Label3;
+          if (!(i_469762507 < (kids_704643862).length)) break Label3;
             F.line = 314;
-            k_704643875 = kids_704643862[chckIndx(i_469762510, 0, (kids_704643862).length - 1)];
+            k_704643875 = kids_704643862[chckIndx(i_469762507, 0, (kids_704643862).length - 1)];
             F.line = 314;
             add_704643797(result_704643863, k_704643875);
             F.line = 11;
-            i_469762510 = addInt(i_469762510, 1);
+            i_469762507 = addInt(i_469762507, 1);
           }
       } while (false);
     } while (false);
@@ -7785,17 +7785,17 @@ function setAttr_704643719(n_704643720, key_704643721, val_704643722) {
         F.line = 249;
         var i_704643739 = 0;
         F.line = 43;
-        var colontmp__469762513 = 0;
+        var colontmp__469762510 = 0;
         F.line = 249;
-        colontmp__469762513 = subInt((n_704643720.attrs).length, 2);
+        colontmp__469762510 = subInt((n_704643720.attrs).length, 2);
         F.line = 65;
-        var res_469762514 = 0;
+        var res_469762511 = 0;
         Label2: do {
           F.line = 66;
             Label3: while (true) {
-            if (!(res_469762514 <= colontmp__469762513)) break Label3;
+            if (!(res_469762511 <= colontmp__469762510)) break Label3;
               F.line = 249;
-              i_704643739 = res_469762514;
+              i_704643739 = res_469762511;
               if ((n_704643720.attrs[chckIndx(i_704643739, 0, (n_704643720.attrs).length - 1)] == key_704643721)) {
               F.line = 251;
               n_704643720.attrs[chckIndx(addInt(i_704643739, 1), 0, (n_704643720.attrs).length - 1)] = val_704643722;
@@ -7804,7 +7804,7 @@ function setAttr_704643719(n_704643720, key_704643721, val_704643722) {
               }
               
               F.line = 68;
-              res_469762514 = addInt(res_469762514, 2);
+              res_469762511 = addInt(res_469762511, 2);
             }
         } while (false);
       } while (false);
@@ -7868,17 +7868,17 @@ function text_469762113(s_469762114) {
       F.line = 22;
       var p_469762154 = [];
       F.line = 8;
-      var i_469762517 = 0;
+      var i_469762514 = 0;
       Label2: do {
         F.line = 9;
           Label3: while (true) {
-          if (!(i_469762517 < (s_469762114).length)) break Label3;
+          if (!(i_469762514 < (s_469762114).length)) break Label3;
             F.line = 22;
-            p_469762154 = s_469762114[chckIndx(i_469762517, 0, (s_469762114).length - 1)];
+            p_469762154 = s_469762114[chckIndx(i_469762514, 0, (s_469762114).length - 1)];
             F.line = 22;
             add_704643797(tmp_469762146, text_704643912(p_469762154));
             F.line = 11;
-            i_469762517 = addInt(i_469762517, 1);
+            i_469762514 = addInt(i_469762514, 1);
           }
       } while (false);
     } while (false);
@@ -7899,21 +7899,21 @@ function map_469762070(s_469762073, op_469762075) {
       F.line = 386;
       var i_469762091 = 0;
       F.line = 117;
-      var colontmp__469762520 = 0;
+      var colontmp__469762517 = 0;
       F.line = 386;
-      colontmp__469762520 = (s_469762073).length;
+      colontmp__469762517 = (s_469762073).length;
       F.line = 119;
-      var i_469762521 = 0;
+      var i_469762518 = 0;
       Label2: do {
         F.line = 120;
           Label3: while (true) {
-          if (!(i_469762521 < colontmp__469762520)) break Label3;
+          if (!(i_469762518 < colontmp__469762517)) break Label3;
             F.line = 386;
-            i_469762091 = i_469762521;
+            i_469762091 = i_469762518;
             F.line = 386;
             result_469762076[chckIndx(i_469762091, 0, (result_469762076).length - 1)] = op_469762075(s_469762073[chckIndx(i_469762091, 0, (s_469762073).length - 1)]);
             F.line = 122;
-            i_469762521 = addInt(i_469762521, 1);
+            i_469762518 = addInt(i_469762518, 1);
           }
       } while (false);
     } while (false);
@@ -7968,17 +7968,17 @@ function checkDigitSum_1140850976(digits_1140850977) {
       F.line = 66;
       var d_1140851003 = 0;
       F.line = 168;
-      var i_469762524 = 0;
+      var i_469762521 = 0;
       F.line = 169;
-      var L_469762525 = (digits_1140850977).length;
+      var L_469762522 = (digits_1140850977).length;
       Label2: do {
         F.line = 170;
           Label3: while (true) {
-          if (!(i_469762524 < L_469762525)) break Label3;
+          if (!(i_469762521 < L_469762522)) break Label3;
             F.line = 66;
-            i_1140851002 = i_469762524;
+            i_1140851002 = i_469762521;
             F.line = 66;
-            d_1140851003 = digits_1140850977[chckIndx(i_469762524, 0, (digits_1140850977).length - 1)];
+            d_1140851003 = digits_1140850977[chckIndx(i_469762521, 0, (digits_1140850977).length - 1)];
             F.line = 66;
             if ((modInt(i_1140851002, 2) == 1)) {
             Temporary4 = d_1140851003;
@@ -7989,8 +7989,8 @@ function checkDigitSum_1140850976(digits_1140850977) {
             
             result_1140850978 = addInt(result_1140850978, Temporary4);
             F.line = 172;
-            i_469762524 = addInt(i_469762524, 1);
-            if (!(((digits_1140850977).length == L_469762525))) {
+            i_469762521 = addInt(i_469762521, 1);
+            if (!(((digits_1140850977).length == L_469762522))) {
             F.line = 173;
             failedAssertImpl_218103864(makeNimstrLit("C:\\Users\\HamidB80\\.choosenim\\toolchains\\nim-1.6.14\\lib\\system\\iterators.nim(173, 11) `len(a) == L` the length of the seq changed while iterating over it"));
             }
@@ -8081,17 +8081,17 @@ function toUpca_1140851030(digits_1140851031) {
       F.line = 88;
       var i_1140851055 = 0;
       F.line = 90;
-      var res_469762528 = 0;
+      var res_469762525 = 0;
       Label2: do {
         F.line = 91;
           Label3: while (true) {
-          if (!(res_469762528 <= 5)) break Label3;
+          if (!(res_469762525 <= 5)) break Label3;
             F.line = 88;
-            i_1140851055 = res_469762528;
+            i_1140851055 = res_469762525;
             F.line = 88;
             result_1140851032.push(upca_1140851020(digits_1140851031[chckIndx(i_1140851055, 0, (digits_1140851031).length - 1)], 0));;
             F.line = 93;
-            res_469762528 = addInt(res_469762528, 1);
+            res_469762525 = addInt(res_469762525, 1);
           }
       } while (false);
     } while (false);
@@ -8101,17 +8101,17 @@ function toUpca_1140851030(digits_1140851031) {
       F.line = 90;
       var i_1140851068 = 0;
       F.line = 90;
-      var res_469762531 = 6;
+      var res_469762528 = 6;
       Label5: do {
         F.line = 91;
           Label6: while (true) {
-          if (!(res_469762531 <= 10)) break Label6;
+          if (!(res_469762528 <= 10)) break Label6;
             F.line = 90;
-            i_1140851068 = res_469762531;
+            i_1140851068 = res_469762528;
             F.line = 90;
             result_1140851032.push(upca_1140851020(digits_1140851031[chckIndx(i_1140851068, 0, (digits_1140851031).length - 1)], 1));;
             F.line = 93;
-            res_469762531 = addInt(res_469762531, 1);
+            res_469762528 = addInt(res_469762528, 1);
           }
       } while (false);
     } while (false);
@@ -8254,22 +8254,22 @@ function HEX27bits_1140850790(lit_1140850791) {
         F.line = 1014;
         var it_1140850826 = 0;
         F.line = 253;
-        var i_469762536 = 0;
+        var i_469762533 = 0;
         F.line = 254;
-        var L_469762537 = (lit_1140850791).length;
+        var L_469762534 = (lit_1140850791).length;
         Label3: do {
           F.line = 255;
             Label4: while (true) {
-            if (!(i_469762536 < L_469762537)) break Label4;
+            if (!(i_469762533 < L_469762534)) break Label4;
               F.line = 1014;
-              it_1140850826 = lit_1140850791[chckIndx(i_469762536, 0, (lit_1140850791).length - 1)];
+              it_1140850826 = lit_1140850791[chckIndx(i_469762533, 0, (lit_1140850791).length - 1)];
               F.line = 22;
               resultHEX60gensym0_1140850825[chckIndx(iHEX60gensym0_1140850807, 0, (resultHEX60gensym0_1140850825).length - 1)] = (it_1140850826 == 49);
               F.line = 1014;
               iHEX60gensym0_1140850807 = addInt(iHEX60gensym0_1140850807, 1);
               F.line = 257;
-              i_469762536 = addInt(i_469762536, 1);
-              if (!(((lit_1140850791).length == L_469762537))) {
+              i_469762533 = addInt(i_469762533, 1);
+              if (!(((lit_1140850791).length == L_469762534))) {
               F.line = 258;
               failedAssertImpl_218103864(makeNimstrLit("C:\\Users\\HamidB80\\.choosenim\\toolchains\\nim-1.6.14\\lib\\system\\iterators.nim(258, 11) `len(a) == L` the length of the string changed while iterating over it"));
               }
@@ -8295,21 +8295,21 @@ function map_1140850731(s_1140850734, op_1140850736) {
       F.line = 386;
       var i_1140850753 = 0;
       F.line = 117;
-      var colontmp__469762540 = 0;
+      var colontmp__469762537 = 0;
       F.line = 386;
-      colontmp__469762540 = (s_1140850734).length;
+      colontmp__469762537 = (s_1140850734).length;
       F.line = 119;
-      var i_469762541 = 0;
+      var i_469762538 = 0;
       Label2: do {
         F.line = 120;
           Label3: while (true) {
-          if (!(i_469762541 < colontmp__469762540)) break Label3;
+          if (!(i_469762538 < colontmp__469762537)) break Label3;
             F.line = 386;
-            i_1140850753 = i_469762541;
+            i_1140850753 = i_469762538;
             F.line = 386;
             result_1140850737[chckIndx(i_1140850753, 0, (result_1140850737).length - 1)] = op_1140850736(s_1140850734[chckIndx(i_1140850753, 0, (s_1140850734).length - 1)]);
             F.line = 122;
-            i_469762541 = addInt(i_469762541, 1);
+            i_469762538 = addInt(i_469762538, 1);
           }
       } while (false);
     } while (false);
@@ -8547,17 +8547,17 @@ function HEX3Aanonymous_469762208(ev_469762209, n_469762210) {
       F.line = 57;
       var d_469762219 = 0;
       F.line = 168;
-      var i_469762472 = 0;
+      var i_469762469 = 0;
       F.line = 169;
-      var L_469762473 = (ds_469762211).length;
+      var L_469762470 = (ds_469762211).length;
       Label3: do {
         F.line = 170;
           Label4: while (true) {
-          if (!(i_469762472 < L_469762473)) break Label4;
+          if (!(i_469762469 < L_469762470)) break Label4;
             F.line = 57;
-            i_469762218 = i_469762472;
+            i_469762218 = i_469762469;
             F.line = 57;
-            d_469762219 = ds_469762211[chckIndx(i_469762472, 0, (ds_469762211).length - 1)];
+            d_469762219 = ds_469762211[chckIndx(i_469762469, 0, (ds_469762211).length - 1)];
             if (!((i_469762218 == 0))) {
             F.line = 59;
             add_704643797(tmp_469762181, text_704643912(makeNimstrLit(" + ")));
@@ -8573,8 +8573,8 @@ function HEX3Aanonymous_469762208(ev_469762209, n_469762210) {
             }
             
             F.line = 172;
-            i_469762472 = addInt(i_469762472, 1);
-            if (!(((ds_469762211).length == L_469762473))) {
+            i_469762469 = addInt(i_469762469, 1);
+            if (!(((ds_469762211).length == L_469762470))) {
             F.line = 173;
             failedAssertImpl_218103864(makeNimstrLit("C:\\Users\\HamidB80\\.choosenim\\toolchains\\nim-1.6.14\\lib\\system\\iterators.nim(173, 11) `len(a) == L` the length of the seq changed while iterating over it"));
             }
@@ -8645,13 +8645,13 @@ function HEX3Aanonymous_469762208(ev_469762209, n_469762210) {
       F.line = 83;
       var i_469762225 = 0;
       F.line = 90;
-      var res_469762476 = 1;
+      var res_469762473 = 1;
       Label7: do {
         F.line = 91;
           Label8: while (true) {
-          if (!(res_469762476 <= 6)) break Label8;
+          if (!(res_469762473 <= 6)) break Label8;
             F.line = 83;
-            i_469762225 = res_469762476;
+            i_469762225 = res_469762473;
             F.line = 83;
             var tmp_469762190 = tree_704643860(188, []);
             F.line = 83;
@@ -8659,7 +8659,7 @@ function HEX3Aanonymous_469762208(ev_469762209, n_469762210) {
             F.line = 83;
             add_704643797(tmp_469762187, tmp_469762190);
             F.line = 93;
-            res_469762476 = addInt(res_469762476, 1);
+            res_469762473 = addInt(res_469762473, 1);
           }
       } while (false);
     } while (false);
@@ -8673,13 +8673,13 @@ function HEX3Aanonymous_469762208(ev_469762209, n_469762210) {
       F.line = 85;
       var i_469762230 = 0;
       F.line = 90;
-      var res_469762479 = 1;
+      var res_469762476 = 1;
       Label10: do {
         F.line = 91;
           Label11: while (true) {
-          if (!(res_469762479 <= 6)) break Label11;
+          if (!(res_469762476 <= 6)) break Label11;
             F.line = 85;
-            i_469762230 = res_469762479;
+            i_469762230 = res_469762476;
             F.line = 85;
             var tmp_469762192 = tree_704643860(188, []);
             F.line = 85;
@@ -8687,7 +8687,7 @@ function HEX3Aanonymous_469762208(ev_469762209, n_469762210) {
             F.line = 85;
             add_704643797(tmp_469762187, tmp_469762192);
             F.line = 93;
-            res_469762479 = addInt(res_469762479, 1);
+            res_469762476 = addInt(res_469762476, 1);
           }
       } while (false);
     } while (false);
@@ -8715,19 +8715,19 @@ function HEX3Aanonymous_469762208(ev_469762209, n_469762210) {
       F.line = 91;
       var g_469762234 = 0;
       F.line = 233;
-      var colontmp__469762488 = [];
+      var colontmp__469762485 = [];
       F.line = 91;
-      colontmp__469762488 = toUpca_1140851030(ds_469762211);
+      colontmp__469762485 = toUpca_1140851030(ds_469762211);
       F.line = 235;
-      var i_469762490 = 0;
+      var i_469762487 = 0;
       F.line = 236;
-      var L_469762491 = (colontmp__469762488).length;
+      var L_469762488 = (colontmp__469762485).length;
       Label13: do {
         F.line = 237;
           Label14: while (true) {
-          if (!(i_469762490 < L_469762491)) break Label14;
+          if (!(i_469762487 < L_469762488)) break Label14;
             F.line = 91;
-            g_469762234 = colontmp__469762488[chckIndx(i_469762490, 0, (colontmp__469762488).length - 1)];
+            g_469762234 = colontmp__469762485[chckIndx(i_469762487, 0, (colontmp__469762485).length - 1)];
             F.line = 92;
             var tmp_469762196 = tree_704643860(44, []);
             F.line = 92;
@@ -8738,40 +8738,38 @@ function HEX3Aanonymous_469762208(ev_469762209, n_469762210) {
             tmp_469762197.class = "name";
             F.line = 94;
             add_704643797(tmp_469762197, text_704643912(name_1140850969(g_469762234)));
-            F.line = 95;
-            add_704643797(tmp_469762197, text_704643912(HEX24_335544323((bits_1140850831(g_469762234)).length)));
-            F.line = 95;
+            F.line = 94;
             add_704643797(tmp_469762196, tmp_469762197);
-            F.line = 97;
+            F.line = 96;
             var tmp_469762198 = tree_704643860(44, []);
-            F.line = 97;
+            F.line = 96;
             tmp_469762198.class = "box";
             Label15: do {
-              F.line = 98;
-              var b_469762258 = false;
+              F.line = 97;
+              var b_469762255 = false;
               F.line = 233;
-              var colontmp__469762483 = [];
-              F.line = 98;
-              colontmp__469762483 = bits_1140850831(g_469762234);
+              var colontmp__469762480 = [];
+              F.line = 97;
+              colontmp__469762480 = bits_1140850831(g_469762234);
               F.line = 235;
-              var i_469762485 = 0;
+              var i_469762482 = 0;
               F.line = 236;
-              var L_469762486 = (colontmp__469762483).length;
+              var L_469762483 = (colontmp__469762480).length;
               Label16: do {
                 F.line = 237;
                   Label17: while (true) {
-                  if (!(i_469762485 < L_469762486)) break Label17;
+                  if (!(i_469762482 < L_469762483)) break Label17;
+                    F.line = 97;
+                    b_469762255 = colontmp__469762480[chckIndx(i_469762482, 0, (colontmp__469762480).length - 1)];
                     F.line = 98;
-                    b_469762258 = colontmp__469762483[chckIndx(i_469762485, 0, (colontmp__469762483).length - 1)];
-                    F.line = 99;
                     var tmp_469762199 = tree_704643860(44, []);
-                    F.line = 99;
-                    tmp_469762199.class = ("bit " + toJSStr(color_469762110(b_469762258)));
                     F.line = 98;
+                    tmp_469762199.class = ("bit " + toJSStr(color_469762110(b_469762255)));
+                    F.line = 97;
                     add_704643797(tmp_469762198, tmp_469762199);
                     F.line = 239;
-                    i_469762485 = addInt(i_469762485, 1);
-                    if (!(((colontmp__469762483).length == L_469762486))) {
+                    i_469762482 = addInt(i_469762482, 1);
+                    if (!(((colontmp__469762480).length == L_469762483))) {
                     F.line = 240;
                     failedAssertImpl_218103864(makeNimstrLit("C:\\Users\\HamidB80\\.choosenim\\toolchains\\nim-1.6.14\\lib\\system\\iterators.nim(240, 11) `len(a) == L` the length of the seq changed while iterating over it"));
                     }
@@ -8779,13 +8777,13 @@ function HEX3Aanonymous_469762208(ev_469762209, n_469762210) {
                   }
               } while (false);
             } while (false);
-            F.line = 99;
+            F.line = 98;
             add_704643797(tmp_469762196, tmp_469762198);
             F.line = 91;
             add_704643797(tmp_469762195, tmp_469762196);
             F.line = 239;
-            i_469762490 = addInt(i_469762490, 1);
-            if (!(((colontmp__469762488).length == L_469762491))) {
+            i_469762487 = addInt(i_469762487, 1);
+            if (!(((colontmp__469762485).length == L_469762488))) {
             F.line = 240;
             failedAssertImpl_218103864(makeNimstrLit("C:\\Users\\HamidB80\\.choosenim\\toolchains\\nim-1.6.14\\lib\\system\\iterators.nim(240, 11) `len(a) == L` the length of the seq changed while iterating over it"));
             }
@@ -8793,65 +8791,65 @@ function HEX3Aanonymous_469762208(ev_469762209, n_469762210) {
           }
       } while (false);
     } while (false);
-    F.line = 99;
+    F.line = 98;
     add_704643797(tmp_469762173, tmp_469762195);
-    F.line = 101;
+    F.line = 100;
     var tmp_469762200 = tree_704643860(44, []);
-    F.line = 101;
+    F.line = 100;
     tmp_469762200.class = "final wrapper";
-    F.line = 102;
+    F.line = 101;
     var tmp_469762201 = tree_704643860(22, []);
-    F.line = 103;
+    F.line = 102;
     add_704643797(tmp_469762201, text_704643912(makeNimstrLit("final result")));
-    F.line = 103;
+    F.line = 102;
     add_704643797(tmp_469762200, tmp_469762201);
-    F.line = 105;
+    F.line = 104;
     var tmp_469762202 = tree_704643860(44, []);
-    F.line = 105;
+    F.line = 104;
     tmp_469762202.class = "barcode";
     Label18: do {
-      F.line = 106;
-      var g_469762262 = 0;
+      F.line = 105;
+      var g_469762259 = 0;
       F.line = 233;
-      var colontmp__469762499 = [];
-      F.line = 106;
-      colontmp__469762499 = toUpca_1140851030(ds_469762211);
+      var colontmp__469762496 = [];
+      F.line = 105;
+      colontmp__469762496 = toUpca_1140851030(ds_469762211);
       F.line = 235;
-      var i_469762500 = 0;
+      var i_469762497 = 0;
       F.line = 236;
-      var L_469762501 = (colontmp__469762499).length;
+      var L_469762498 = (colontmp__469762496).length;
       Label19: do {
         F.line = 237;
           Label20: while (true) {
-          if (!(i_469762500 < L_469762501)) break Label20;
-            F.line = 106;
-            g_469762262 = colontmp__469762499[chckIndx(i_469762500, 0, (colontmp__469762499).length - 1)];
+          if (!(i_469762497 < L_469762498)) break Label20;
+            F.line = 105;
+            g_469762259 = colontmp__469762496[chckIndx(i_469762497, 0, (colontmp__469762496).length - 1)];
             Label21: do {
-              F.line = 107;
-              var b_469762266 = false;
+              F.line = 106;
+              var b_469762263 = false;
               F.line = 233;
-              var colontmp__469762495 = [];
-              F.line = 107;
-              colontmp__469762495 = bits_1140850831(g_469762262);
+              var colontmp__469762492 = [];
+              F.line = 106;
+              colontmp__469762492 = bits_1140850831(g_469762259);
               F.line = 235;
-              var i_469762496 = 0;
+              var i_469762493 = 0;
               F.line = 236;
-              var L_469762497 = (colontmp__469762495).length;
+              var L_469762494 = (colontmp__469762492).length;
               Label22: do {
                 F.line = 237;
                   Label23: while (true) {
-                  if (!(i_469762496 < L_469762497)) break Label23;
+                  if (!(i_469762493 < L_469762494)) break Label23;
+                    F.line = 106;
+                    b_469762263 = colontmp__469762492[chckIndx(i_469762493, 0, (colontmp__469762492).length - 1)];
                     F.line = 107;
-                    b_469762266 = colontmp__469762495[chckIndx(i_469762496, 0, (colontmp__469762495).length - 1)];
-                    F.line = 108;
                     var tmp_469762203 = tree_704643860(44, []);
-                    F.line = 108;
-                    tmp_469762203.class = ("bit " + toJSStr(color_469762110(b_469762266)));
                     F.line = 107;
+                    tmp_469762203.class = ("bit " + toJSStr(color_469762110(b_469762263)));
+                    F.line = 106;
                     add_704643797(tmp_469762202, tmp_469762203);
                     F.line = 239;
-                    i_469762496 = addInt(i_469762496, 1);
-                    if (!(((colontmp__469762495).length == L_469762497))) {
+                    i_469762493 = addInt(i_469762493, 1);
+                    if (!(((colontmp__469762492).length == L_469762494))) {
                     F.line = 240;
                     failedAssertImpl_218103864(makeNimstrLit("C:\\Users\\HamidB80\\.choosenim\\toolchains\\nim-1.6.14\\lib\\system\\iterators.nim(240, 11) `len(a) == L` the length of the seq changed while iterating over it"));
                     }
@@ -8860,8 +8858,8 @@ function HEX3Aanonymous_469762208(ev_469762209, n_469762210) {
               } while (false);
             } while (false);
             F.line = 239;
-            i_469762500 = addInt(i_469762500, 1);
-            if (!(((colontmp__469762499).length == L_469762501))) {
+            i_469762497 = addInt(i_469762497, 1);
+            if (!(((colontmp__469762496).length == L_469762498))) {
             F.line = 240;
             failedAssertImpl_218103864(makeNimstrLit("C:\\Users\\HamidB80\\.choosenim\\toolchains\\nim-1.6.14\\lib\\system\\iterators.nim(240, 11) `len(a) == L` the length of the seq changed while iterating over it"));
             }
@@ -8869,28 +8867,28 @@ function HEX3Aanonymous_469762208(ev_469762209, n_469762210) {
           }
       } while (false);
     } while (false);
-    F.line = 108;
+    F.line = 107;
     add_704643797(tmp_469762200, tmp_469762202);
-    F.line = 110;
+    F.line = 109;
     var tmp_469762204 = tree_704643860(71, []);
     Label24: do {
-      F.line = 111;
-      var d_469762287 = 0;
+      F.line = 110;
+      var d_469762284 = 0;
       F.line = 235;
-      var i_469762505 = 0;
+      var i_469762502 = 0;
       F.line = 236;
-      var L_469762506 = (ds_469762211).length;
+      var L_469762503 = (ds_469762211).length;
       Label25: do {
         F.line = 237;
           Label26: while (true) {
-          if (!(i_469762505 < L_469762506)) break Label26;
-            F.line = 111;
-            d_469762287 = ds_469762211[chckIndx(i_469762505, 0, (ds_469762211).length - 1)];
-            F.line = 111;
-            add_704643797(tmp_469762204, text_704643912(HEX24_335544323(d_469762287)));
+          if (!(i_469762502 < L_469762503)) break Label26;
+            F.line = 110;
+            d_469762284 = ds_469762211[chckIndx(i_469762502, 0, (ds_469762211).length - 1)];
+            F.line = 110;
+            add_704643797(tmp_469762204, text_704643912(HEX24_335544323(d_469762284)));
             F.line = 239;
-            i_469762505 = addInt(i_469762505, 1);
-            if (!(((ds_469762211).length == L_469762506))) {
+            i_469762502 = addInt(i_469762502, 1);
+            if (!(((ds_469762211).length == L_469762503))) {
             F.line = 240;
             failedAssertImpl_218103864(makeNimstrLit("C:\\Users\\HamidB80\\.choosenim\\toolchains\\nim-1.6.14\\lib\\system\\iterators.nim(240, 11) `len(a) == L` the length of the seq changed while iterating over it"));
             }
@@ -8898,11 +8896,11 @@ function HEX3Aanonymous_469762208(ev_469762209, n_469762210) {
           }
       } while (false);
     } while (false);
-    F.line = 114;
+    F.line = 113;
     add_704643797(tmp_469762204, text_704643912(HEX24_335544323(checkDigit_1140851017(ds_469762211))));
-    F.line = 114;
+    F.line = 113;
     add_704643797(tmp_469762200, tmp_469762204);
-    F.line = 114;
+    F.line = 113;
     add_704643797(tmp_469762173, tmp_469762200);
 --excHandler;
 } catch (EXCEPTION) {
@@ -8911,13 +8909,13 @@ function HEX3Aanonymous_469762208(ev_469762209, n_469762210) {
  --excHandler;
     framePtr = F;
     if (lastJSError && (isObj(lastJSError.m_type, NTI33555130))) {
-    F.line = 117;
+    F.line = 116;
     var tmp_469762205 = tree_704643860(44, []);
-    F.line = 117;
+    F.line = 116;
     tmp_469762205.class = "error";
-    F.line = 118;
+    F.line = 117;
     add_704643797(tmp_469762205, text_704643912(makeNimstrLit("barcode must only contain digits from 0 to 9")));
-    F.line = 118;
+    F.line = 117;
     add_704643797(tmp_469762173, tmp_469762205);
     }
     else {
@@ -8929,25 +8927,25 @@ function HEX3Aanonymous_469762208(ev_469762209, n_469762210) {
     }
     }
     
-    F.line = 120;
+    F.line = 119;
     var tmp_469762206 = tree_704643860(29, []);
-    F.line = 121;
+    F.line = 120;
     var tmp_469762207 = tree_704643860(32, []);
-    F.line = 122;
+    F.line = 121;
     add_704643797(tmp_469762207, text_704643912(makeNimstrLit("created by ")));
-    F.line = 123;
+    F.line = 122;
     add_704643797(tmp_469762207, url_469762164(makeNimstrLit("@hamidb80"), makeNimstrLit("https://github.com/hamidb80")));
-    F.line = 125;
+    F.line = 124;
     add_704643797(tmp_469762207, text_704643912(makeNimstrLit(" - you can read the explaination ")));
-    F.line = 126;
+    F.line = 125;
     add_704643797(tmp_469762207, url_469762164(makeNimstrLit("in persian"), makeNimstrLit("https://vrgl.ir/tqxlq")));
-    F.line = 128;
+    F.line = 127;
     add_704643797(tmp_469762207, text_704643912(makeNimstrLit(" - here\'s the repository ")));
-    F.line = 129;
+    F.line = 128;
     add_704643797(tmp_469762207, url_469762164(makeNimstrLit("on github"), makeNimstrLit("https://github.com/CEShahed/linear-barcode")));
-    F.line = 129;
+    F.line = 128;
     add_704643797(tmp_469762206, tmp_469762207);
-    F.line = 129;
+    F.line = 128;
     add_704643797(tmp_469762173, tmp_469762206);
     result_469762172 = tmp_469762173;
   framePtr = F.prev;
@@ -8957,8 +8955,8 @@ function HEX3Aanonymous_469762208(ev_469762209, n_469762210) {
 }
 var F = {procname: "module web", prev: framePtr, filename: "C:\\Users\\HamidB80\\Documents\\programming\\nim\\linear-barcode\\src\\web.nim", line: 0};
 framePtr = F;
-F.line = 133;
-rawEcho(makeNimstrLit("compiled at: "), makeNimstrLit("2023-07-09"), makeNimstrLit(" "), makeNimstrLit("21:37:51"));
+F.line = 132;
+rawEcho(makeNimstrLit("compiled at: "), makeNimstrLit("2023-07-10"), makeNimstrLit(" "), makeNimstrLit("03:41:37"));
 setRenderer_671089775(createDom_469762171, "ROOT", null);
 framePtr = F.prev;
 var F = {procname: "module web", prev: framePtr, filename: "C:\\Users\\HamidB80\\Documents\\programming\\nim\\linear-barcode\\src\\web.nim", line: 0};
